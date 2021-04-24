@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Data\JavaWarehouse\RepoMaven" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../JavaWarehouse/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\Data\JavaWarehouse\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1rbDiYKsbmhu6vqLzbjDCFvpPAi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.WordCountExample">
+    <configuration name="WordCountExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.WordCountExample" />
+      <module name="Flink_self_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCountFromBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.WordCountFromBatch" />
+      <module name="Flink_self_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordCountFromSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.WordCountFromSocket" />
+      <module name="Flink_self_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WordCountExample" />
+        <item itemvalue="Application.WordCountFromBatch" />
+        <item itemvalue="Application.WordCountFromSocket" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="" />
+      <created>1619236024011</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619236024011</updated>
+      <workItem from="1619236027431" duration="2175000" />
+      <workItem from="1619243818076" duration="99000" />
+      <workItem from="1619244036256" duration="9065000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="27" key="#Project_Structure" timestamp="1619236032243">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1619236032243" />
+    <state x="462" y="124" key="FileChooserDialogImpl" timestamp="1619236237138">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="462" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619236237138" />
+    <state width="1323" height="206" key="GridCell.Tab.0.bottom" timestamp="1619281028115">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="206" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619281028115" />
+    <state width="1323" height="206" key="GridCell.Tab.0.center" timestamp="1619281028115">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="206" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619281028115" />
+    <state width="1323" height="206" key="GridCell.Tab.0.left" timestamp="1619281028115">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="206" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619281028115" />
+    <state width="1323" height="206" key="GridCell.Tab.0.right" timestamp="1619281028115">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="206" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619281028115" />
+    <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1619244061279">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="363" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1619244061279" />
+    <state x="57" y="93" key="new project wizard" timestamp="1619236301185">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="57" y="93" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1619236301185" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1619253334920">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1619253334920" />
+  </component>
+</project>

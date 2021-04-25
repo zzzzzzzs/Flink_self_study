@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="" />
+    <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCountFromBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCountFromBatch.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +81,7 @@
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WordCountExample">
+  <component name="RunManager" selected="Application.WordCountFromSocket">
     <configuration name="WordCountExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.me.WordCountExample" />
       <module name="Flink_self_study" />
@@ -120,9 +123,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WordCountExample" />
-        <item itemvalue="Application.WordCountFromBatch" />
         <item itemvalue="Application.WordCountFromSocket" />
+        <item itemvalue="Application.WordCountFromBatch" />
+        <item itemvalue="Application.WordCountExample" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +142,7 @@
       <workItem from="1619236027431" duration="2175000" />
       <workItem from="1619243818076" duration="99000" />
       <workItem from="1619244036256" duration="9065000" />
+      <workItem from="1619312283029" duration="8012000" />
     </task>
     <servers />
   </component>
@@ -154,22 +158,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619236237138" />
-    <state width="1323" height="206" key="GridCell.Tab.0.bottom" timestamp="1619281028115">
+    <state width="1323" height="173" key="GridCell.Tab.0.bottom" timestamp="1619368008590">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619281028115" />
-    <state width="1323" height="206" key="GridCell.Tab.0.center" timestamp="1619281028115">
+    <state width="1323" height="173" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619368008590" />
+    <state width="1323" height="173" key="GridCell.Tab.0.center" timestamp="1619368008590">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619281028115" />
-    <state width="1323" height="206" key="GridCell.Tab.0.left" timestamp="1619281028115">
+    <state width="1323" height="173" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619368008590" />
+    <state width="1323" height="173" key="GridCell.Tab.0.left" timestamp="1619368008589">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619281028115" />
-    <state width="1323" height="206" key="GridCell.Tab.0.right" timestamp="1619281028115">
+    <state width="1323" height="173" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619368008589" />
+    <state width="1323" height="173" key="GridCell.Tab.0.right" timestamp="1619368008590">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="206" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619281028115" />
+    <state width="1323" height="173" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619368008590" />
     <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1619244061279">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -178,9 +182,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="57" y="93" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1619236301185" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1619253334920">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1619320581747">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1619253334920" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1619320581747" />
   </component>
 </project>

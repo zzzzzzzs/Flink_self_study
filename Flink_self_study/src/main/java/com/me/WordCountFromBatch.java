@@ -19,9 +19,10 @@ public class WordCountFromBatch {
 
         // 数据源
         DataStreamSource<String> stream = env
-                .fromElements("hello world", "hello world");
+                .fromElements("Hello world", "Hello Flink");
 
         // map操作：string => (string, 1)
+        // map语义：将列表里面的每一个元素都映射成一个新的元素
         // flatMap的语义：将列表中的每一个元素转化成0个，1个或者多个元素
         SingleOutputStreamOperator<WordWithCount> mappedStream = stream
                 // 匿名类
@@ -40,22 +41,26 @@ public class WordCountFromBatch {
                 });
 
         // shuffle操作
+        // keyBy分组
         KeyedStream<WordWithCount, String> keyedStream = mappedStream
                 // 第一个泛型是流中数据的类型
                 // 第二个泛型是key的类型
                 .keyBy(new KeySelector<WordWithCount, String>() {
                     @Override
                     public String getKey(WordWithCount value) throws Exception {
+                        // 指定key操作
                         return value.word;
                     }
                 });
 
         // reduce操作
+        // reduce语义：归纳，当碰到列表里的第一个元素的时候，将第一个元素作为累加器，碰到第二个元素的时候将累加器中的元素进行聚合
         // 累加器的类型和元素类型是一样的
         SingleOutputStreamOperator<WordWithCount> reducedStream = keyedStream
                 .reduce(new ReduceFunction<WordWithCount>() {
                     @Override
                     public WordWithCount reduce(WordWithCount value1, WordWithCount value2) throws Exception {
+                        // 聚合需要相同的key，然后将count加起来
                         return new WordWithCount(value1.word, value1.count + value2.count);
                     }
                 });

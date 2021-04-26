@@ -1,4 +1,4 @@
-package com.me;
+package com.me.WordCount;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.ReduceFunction;

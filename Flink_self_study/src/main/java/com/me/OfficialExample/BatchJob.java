@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.me;
+package com.me.OfficialExample;
 
 import org.apache.flink.api.java.ExecutionEnvironment;
 

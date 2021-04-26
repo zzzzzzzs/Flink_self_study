@@ -1,4 +1,4 @@
-package com.me;
+package com.me.WordCount;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.ReduceFunction;
@@ -64,6 +64,7 @@ public class WordCountFromBatch {
                         return new WordWithCount(value1.word, value1.count + value2.count);
                     }
                 });
+
 
         // 输出聚合的累加器结果
         reducedStream.print();

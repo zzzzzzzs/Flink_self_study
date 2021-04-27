@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/BatchJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/OfficialExample/BatchJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/StreamingJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/OfficialExample/StreamingJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCountExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCountFromBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromBatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCountFromSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/aaa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/aaa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromBatch1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromBatch1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +68,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ApacheSpark-Self-Study" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flink-release-1.12" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -91,35 +86,9 @@
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.transform_09_connect_2">
-    <configuration name="ListPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.ListPrint" />
-      <module name="Flink_self_study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.me.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordCountFromBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.WordCount.WordCountFromBatch" />
-      <module name="Flink_self_study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.me.WordCount.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="transform_08_union" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_08_union" />
+  <component name="RunManager" selected="Application.transform_18_AggregateFunction_ProcessWindowFunction">
+    <configuration name="transform_12_TumblingProcessingTimeWindows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_12_TumblingProcessingTimeWindows" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="transform_09_connect_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_09_connect_1" />
+    <configuration name="transform_15_ReduceFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_15_ReduceFunction" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
@@ -144,8 +113,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="transform_09_connect_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_09_connect_2" />
+    <configuration name="transform_16_AggregateFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_16_AggregateFunction" />
+      <module name="Flink_self_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.Transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="transform_17_ProcessWindowFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_17_ProcessWindowFunction" />
+      <module name="Flink_self_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.Transform.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="transform_18_AggregateFunction_ProcessWindowFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_18_AggregateFunction_ProcessWindowFunction" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
@@ -159,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.transform_09_connect_2" />
-        <item itemvalue="Application.transform_09_connect_1" />
-        <item itemvalue="Application.WordCountFromBatch" />
-        <item itemvalue="Application.transform_08_union" />
-        <item itemvalue="Application.ListPrint" />
+        <item itemvalue="Application.transform_18_AggregateFunction_ProcessWindowFunction" />
+        <item itemvalue="Application.transform_17_ProcessWindowFunction" />
+        <item itemvalue="Application.transform_15_ReduceFunction" />
+        <item itemvalue="Application.transform_12_TumblingProcessingTimeWindows" />
+        <item itemvalue="Application.transform_16_AggregateFunction" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +177,7 @@
       <workItem from="1619244036256" duration="9065000" />
       <workItem from="1619312283029" duration="8012000" />
       <workItem from="1619394277331" duration="25733000" />
+      <workItem from="1619481095736" duration="38875000" />
     </task>
     <servers />
   </component>
@@ -193,57 +189,72 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1619236032243" />
-    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1619440160491">
+    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1619526198875">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1619440160491" />
-    <state x="325" y="113" key="FileChooserDialogImpl" timestamp="1619434977304">
+    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1619526198875" />
+    <state x="325" y="113" key="FileChooserDialogImpl" timestamp="1619519107985">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619434977304" />
-    <state width="1323" height="216" key="GridCell.Tab.0.bottom" timestamp="1619452088820">
+    <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619519107985" />
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1619540522273">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="216" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619452088820" />
-    <state width="1323" height="216" key="GridCell.Tab.0.center" timestamp="1619452088819">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619540522273" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1619540522272">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="216" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619452088819" />
-    <state width="1323" height="216" key="GridCell.Tab.0.left" timestamp="1619452088819">
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619540522272" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1619540522272">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="216" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619452088819" />
-    <state width="1323" height="216" key="GridCell.Tab.0.right" timestamp="1619452088820">
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619540522272" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1619540522272">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="216" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619452088820" />
-    <state width="1323" height="216" key="GridCell.Tab.1.bottom" timestamp="1619452088820">
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619540522272" />
+    <state width="1323" height="140" key="GridCell.Tab.1.bottom" timestamp="1619540522264">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="216" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619452088820" />
-    <state width="1323" height="216" key="GridCell.Tab.1.center" timestamp="1619452088820">
+    <state width="1323" height="140" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619540522264" />
+    <state width="1323" height="140" key="GridCell.Tab.1.center" timestamp="1619540522263">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="216" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1619452088820" />
-    <state width="1323" height="216" key="GridCell.Tab.1.left" timestamp="1619452088820">
+    <state width="1323" height="140" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1619540522263" />
+    <state width="1323" height="140" key="GridCell.Tab.1.left" timestamp="1619540522263">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="216" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1619452088820" />
-    <state width="1323" height="216" key="GridCell.Tab.1.right" timestamp="1619452088820">
+    <state width="1323" height="140" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1619540522263" />
+    <state width="1323" height="140" key="GridCell.Tab.1.right" timestamp="1619540522263">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="216" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1619452088820" />
+    <state width="1323" height="140" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1619540522263" />
     <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1619394791486">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="363" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1619394791486" />
+    <state x="359" y="102" width="647" height="534" key="find.popup" timestamp="1619526430257">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="359" y="102" width="647" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1619526430257" />
     <state x="57" y="93" key="new project wizard" timestamp="1619236301185">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="57" y="93" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1619236301185" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1619450984219">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1619527184464">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1619450984219" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1619527184464" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_06_reduce.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

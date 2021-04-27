@@ -2,6 +2,7 @@ package com.me.WordCount;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.ReduceFunction;
+import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.api.common.typeinfo.Types;
 import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
@@ -43,6 +44,8 @@ public class WordCountFromBatch1 {
         // 不要忘记执行
         env.execute();
     }
+
+
 
     // POJO Class
     // 类必须是公有类

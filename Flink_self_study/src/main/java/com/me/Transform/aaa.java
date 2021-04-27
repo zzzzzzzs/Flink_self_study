@@ -11,7 +11,7 @@ public class aaa {
         //获得环境
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         //设置并行度
-        env.setParallelism(1);
+        env.setParallelism(2);
         //获得数据来源
 
         DataStreamSource<Integer> streamSource2 = env.fromCollection(Arrays.asList(21, 22, 23, 24, 25, 26, 27, 28, 29));
@@ -20,7 +20,7 @@ public class aaa {
 
 
         streamSource1.map(n -> {
-            Thread.sleep(1000);
+            Thread.sleep(50000);
             return 100 + n;
         });
 
@@ -31,5 +31,4 @@ public class aaa {
         //执行程序
         env.execute();
     }
-
 }

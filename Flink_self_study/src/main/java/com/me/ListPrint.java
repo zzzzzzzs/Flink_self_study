@@ -1,18 +1,32 @@
 package com.me;
 
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 public class ListPrint {
 
-    public static void ListPrint(int[] a, int count) {
-        if (count >= a.length) {
+    public static long countW = 0;
+
+
+    public static void ListPrint(List arr, int count) {
+        if (count >= arr.size()) {
             return;
         }
-        System.out.println(a[count]);
-        ListPrint(a, ++count);
+        ++countW;
+        System.out.println(arr.get(count));
+        ListPrint(arr, ++count);
     }
 
+
+    // TODO StackOverflowError
     public static void main(String[] args) {
-        int[] a = new int[]{1, 2, 3, 4, 6, 7, 8, 0, 5};
-        ListPrint(a, 0);
+        ArrayList<Integer> arrayList = new ArrayList<Integer>();
+        for (int i = 0; i < 50000; ++i) {
+            arrayList.add(new Random().nextInt());
+        }
+        ListPrint(arrayList, 0);
+        System.out.println("countW" + countW);
     }
 }

@@ -19,7 +19,7 @@ public class WordCountFromBatch {
 
         // 数据源
         DataStreamSource<String> stream = env
-                .fromElements("Hello world", "Hello Flink");
+                .fromElements("Hello world", "Hello Flink", "Hello Spark");
 
         // map操作：string => (string, 1)
         // map语义：将列表里面的每一个元素都映射成一个新的元素
@@ -48,6 +48,7 @@ public class WordCountFromBatch {
                 .keyBy(new KeySelector<WordWithCount, String>() {
                     @Override
                     public String getKey(WordWithCount value) throws Exception {
+                        System.out.println("---------------");
                         // 指定key操作
                         return value.word;
                     }

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/aaa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/aaa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ListPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ListPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_17_ProcessWindowFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_17_ProcessWindowFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_18_AggregateFunction_ProcessWindowFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_18_AggregateFunction_ProcessWindowFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_19_recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_19_recursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromBatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromBatch1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromBatch1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +61,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1rbDiYKsbmhu6vqLzbjDCFvpPAi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -69,30 +76,34 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../flink-release-1.12" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.25897437" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.me.Transform" />
-      <recent name="com.me.WordCount" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.me.WaterMark" />
+      <recent name="com.me.Transform" />
+      <recent name="com.me.WordCount" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.me.WaterMark" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.transform_18_AggregateFunction_ProcessWindowFunction">
-    <configuration name="transform_12_TumblingProcessingTimeWindows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_12_TumblingProcessingTimeWindows" />
+  <component name="RunManager" selected="Application.transform_19_recursion">
+    <configuration name="WordCountFromBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.WordCount.WordCountFromBatch" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.Transform.*" />
+          <option name="PATTERN" value="com.me.WordCount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="transform_15_ReduceFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_15_ReduceFunction" />
+    <configuration name="WordCountFromBatch1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.WordCount.WordCountFromBatch1" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.Transform.*" />
+          <option name="PATTERN" value="com.me.WordCount.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="transform_16_AggregateFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_16_AggregateFunction" />
+    <configuration name="bbb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.WaterMark.bbb" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.Transform.*" />
+          <option name="PATTERN" value="com.me.WaterMark.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="transform_17_ProcessWindowFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_17_ProcessWindowFunction" />
+    <configuration name="ccc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.WaterMark.ccc" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.Transform.*" />
+          <option name="PATTERN" value="com.me.WaterMark.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,8 +150,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="transform_18_AggregateFunction_ProcessWindowFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_18_AggregateFunction_ProcessWindowFunction" />
+    <configuration name="transform_19_recursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_19_recursion" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
@@ -154,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.transform_18_AggregateFunction_ProcessWindowFunction" />
-        <item itemvalue="Application.transform_17_ProcessWindowFunction" />
-        <item itemvalue="Application.transform_15_ReduceFunction" />
-        <item itemvalue="Application.transform_12_TumblingProcessingTimeWindows" />
-        <item itemvalue="Application.transform_16_AggregateFunction" />
+        <item itemvalue="Application.transform_19_recursion" />
+        <item itemvalue="Application.WordCountFromBatch1" />
+        <item itemvalue="Application.ccc" />
+        <item itemvalue="Application.WordCountFromBatch" />
+        <item itemvalue="Application.bbb" />
       </list>
     </recent_temporary>
   </component>
@@ -178,6 +189,9 @@
       <workItem from="1619312283029" duration="8012000" />
       <workItem from="1619394277331" duration="25733000" />
       <workItem from="1619481095736" duration="38875000" />
+      <workItem from="1619566531190" duration="12650000" />
+      <workItem from="1619589513154" duration="13955000" />
+      <workItem from="1619608207762" duration="10302000" />
     </task>
     <servers />
   </component>
@@ -189,30 +203,42 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1619236032243" />
-    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1619526198875">
+    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1619613550954">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1619526198875" />
-    <state x="325" y="113" key="FileChooserDialogImpl" timestamp="1619519107985">
+    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1619613550954" />
+    <state x="413" y="145" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1619592431798">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619519107985" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1619540522273">
+    <state x="413" y="145" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1619592431798" />
+    <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619592438689">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619540522273" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1619540522272">
+    <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1619592438689" />
+    <state x="413" y="115" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1619609256111">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619540522272" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1619540522272">
+    <state x="413" y="115" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.738@0.0.1366.738" timestamp="1619609256111" />
+    <state x="325" y="113" key="FileChooserDialogImpl" timestamp="1619622922671">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619540522272" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1619540522272">
+    <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619622922671" />
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1619624174758">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619540522272" />
+    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619624174758" />
+    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1619624174757">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619624174757" />
+    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1619624174755">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619624174755" />
+    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1619624174757">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619624174757" />
     <state width="1323" height="140" key="GridCell.Tab.1.bottom" timestamp="1619540522264">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -229,22 +255,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="140" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1619540522263" />
-    <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1619394791486">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1619568296356">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1619394791486" />
-    <state x="359" y="102" width="647" height="534" key="find.popup" timestamp="1619526430257">
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1619568296356" />
+    <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1619589516357">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="359" y="102" width="647" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1619526430257" />
+    <state x="363" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1619589516357" />
+    <state x="359" y="102" width="647" height="534" key="find.popup" timestamp="1619596986235">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="359" y="102" width="647" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1619596986235" />
     <state x="57" y="93" key="new project wizard" timestamp="1619236301185">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="57" y="93" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1619236301185" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1619527184464">
+    <state x="339" y="165" key="run.anything.popup" timestamp="1619573251950">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1619527184464" />
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1619573251950" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1619609759715">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1619609759715" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

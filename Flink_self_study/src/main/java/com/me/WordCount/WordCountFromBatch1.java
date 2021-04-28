@@ -21,11 +21,12 @@ public class WordCountFromBatch1 {
 
         // 数据源
         env
-                .fromElements("Hello world", "Hello Flink")
+                .fromElements("Hello world", "Hello Flink", "Hello Spark")
                 .flatMap(
                         new FlatMapFunction<String, WordCountFromBatch.WordWithCount>() {
                             @Override
                             public void flatMap(String value, Collector<WordCountFromBatch.WordWithCount> out) throws Exception {
+                                System.out.println("$$$$$$$$$$$$$$$$$$$$$$");
                                 // 使用空格进行切分
                                 String[] arr = value.split(" ");
                                 // 使用collect方法向下游发送数据
@@ -35,7 +36,12 @@ public class WordCountFromBatch1 {
                             }
                         }
                 )
-                .keyBy(r -> r.word)
+                .keyBy(
+                        r -> {
+                            System.out.println("------------------------" + r.word);
+                            return r.word;
+                        }
+                )
                 .reduce(((value1, value2) -> {
                             return new WordCountFromBatch.WordWithCount(value1.word, value1.count + value2.count);
                         })
@@ -44,7 +50,6 @@ public class WordCountFromBatch1 {
         // 不要忘记执行
         env.execute();
     }
-
 
 
     // POJO Class
@@ -57,6 +62,7 @@ public class WordCountFromBatch1 {
 
         public WordWithCount() {
         }
+
         public WordWithCount(String word, Long count) {
             this.word = word;
             this.count = count;

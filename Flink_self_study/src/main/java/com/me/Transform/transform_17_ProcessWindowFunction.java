@@ -40,6 +40,7 @@ public class transform_17_ProcessWindowFunction {
 
     public static class WindowResult extends ProcessWindowFunction<SensorReading, Avg, String, TimeWindow> {
         // 参数1: key 参数2: 上下文对象 参数3: 迭代器 这个窗口内所有的元素 参数4: 收集器, 用于向下游传递数据
+
         @Override
         public void process(String key, Context context, Iterable<SensorReading> iterable, Collector<Avg> collector) throws Exception {
             double sum = 0.0;

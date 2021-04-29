@@ -13,12 +13,16 @@ public class ccc {
 
         DataStreamSource<String> stream = env.socketTextStream("localhost", 9999);
 
+
+
+        //  TODO 感觉这里有bug ，keyBy函数走2次
+
         stream
                 .map(
                         new MapFunction<String, Word>() {
                             @Override
                             public Word map(String value) throws Exception {
-                                System.out.println("22222222222222222222222");
+                                System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4");
                                 String[] s = value.split(" ");
                                 return new Word(s[0], Long.valueOf(s[1]) * 1000);
                             }

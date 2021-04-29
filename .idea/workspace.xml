@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_19_recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_19_recursion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/ccc.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/ccc.java" afterDir="false" />
-    </list>
+    <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +188,7 @@
       <workItem from="1619608207762" duration="10302000" />
       <workItem from="1619652712499" duration="5610000" />
       <workItem from="1619660246457" duration="19822000" />
-      <workItem from="1619691029660" duration="12590000" />
+      <workItem from="1619691029660" duration="12660000" />
     </task>
     <servers />
   </component>
@@ -224,22 +220,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619697384047" />
-    <state width="1323" height="149" key="GridCell.Tab.0.bottom" timestamp="1619711676476">
+    <state width="1323" height="149" key="GridCell.Tab.0.bottom" timestamp="1619711776296">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="149" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619711676476" />
-    <state width="1323" height="149" key="GridCell.Tab.0.center" timestamp="1619711676475">
+    <state width="1323" height="149" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619711776296" />
+    <state width="1323" height="149" key="GridCell.Tab.0.center" timestamp="1619711776295">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="149" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619711676475" />
-    <state width="1323" height="149" key="GridCell.Tab.0.left" timestamp="1619711676475">
+    <state width="1323" height="149" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619711776295" />
+    <state width="1323" height="149" key="GridCell.Tab.0.left" timestamp="1619711776294">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="149" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619711676475" />
-    <state width="1323" height="149" key="GridCell.Tab.0.right" timestamp="1619711676476">
+    <state width="1323" height="149" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619711776294" />
+    <state width="1323" height="149" key="GridCell.Tab.0.right" timestamp="1619711776295">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="149" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619711676476" />
+    <state width="1323" height="149" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619711776295" />
     <state width="1323" height="140" key="GridCell.Tab.1.bottom" timestamp="1619540522264">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

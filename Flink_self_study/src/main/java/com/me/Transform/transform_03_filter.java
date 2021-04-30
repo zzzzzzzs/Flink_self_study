@@ -7,7 +7,7 @@ import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;
-// spark可以使用map, flatmap, reduce, sort, groupBy可以实现所有的需求
+// spark可以使用map, flatmap, reduce, sort, groupBy可以实现其他算子所有的需求
 // TODO filter语义：针对流中的每一个元素选择输出或者不输出
 public class transform_03_filter {
     public static void main(String[] args) throws Exception {

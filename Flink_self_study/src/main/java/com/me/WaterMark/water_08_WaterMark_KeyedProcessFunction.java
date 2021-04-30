@@ -47,6 +47,9 @@ public class water_08_WaterMark_KeyedProcessFunction {
                 .process(new KeyedProcessFunction<String, Tuple2<String, Long>, String>() {
                     @Override
                     public void processElement(Tuple2<String, Long> element, Context context, Collector<String> collector) throws Exception {
+                        String s = element.toString() + " 的当前水位线是：" + context.timerService().currentWatermark();
+                        System.out.println(s);
+//                        collector.collect(s);
                         // 每来一条数据，调用一次
                         collector.collect("数据到达，当前数据的事件时间是：" + new Timestamp(element.f1));
                         // 注册10s之后的定时器（事件时间），定时器是onTimer

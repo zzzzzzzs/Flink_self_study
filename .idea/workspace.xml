@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="" />
+    <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_03_filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/Transform/transform_03_filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_01_WatermarkStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_01_WatermarkStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_01_WatermarkStrategy1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_01_WatermarkStrategy1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_02_setAutoWatermarkInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_02_setAutoWatermarkInterval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_03_WatermarkStrategyCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_03_WatermarkStrategyCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_08_WaterMark_KeyedProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_08_WaterMark_KeyedProcessFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_09_Split_WaterMark_BroadCast.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_09_Split_WaterMark_BroadCast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_10_Merge_WaterMark_BroadCast.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_10_Merge_WaterMark_BroadCast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_10_Merge_WaterMark_BroadCast1.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,52 +88,27 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.me.WaterMark" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.me.WaterMark" />
+      <recent name="com.me.bug" />
       <recent name="com.me.Process" />
       <recent name="com.me.Transform" />
       <recent name="com.me.WordCount" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.me.WaterMark" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.transform_19_recursion">
-    <configuration name="transform_19_recursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_19_recursion" />
+  <component name="RunManager" selected="Application.water_11_KeyedProcessFunction_Case">
+    <configuration name="Bug_KeyBy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.bug.Bug_KeyBy" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.Transform.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="water_01_WatermarkStrategy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.WaterMark.water_01_WatermarkStrategy" />
-      <module name="Flink_self_study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.me.WaterMark.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="water_01_WatermarkStrategy1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.WaterMark.water_01_WatermarkStrategy1" />
-      <module name="Flink_self_study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.me.WaterMark.*" />
+          <option name="PATTERN" value="com.me.bug.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,13 +142,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="water_10_Merge_WaterMark_BroadCast1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.WaterMark.water_10_Merge_WaterMark_BroadCast1" />
+      <module name="Flink_self_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.WaterMark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="water_11_KeyedProcessFunction_Case" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.WaterMark.water_11_KeyedProcessFunction_Case" />
+      <module name="Flink_self_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.WaterMark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.transform_19_recursion" />
-        <item itemvalue="Application.water_01_WatermarkStrategy1" />
-        <item itemvalue="Application.water_09_Split_WaterMark_BroadCast" />
-        <item itemvalue="Application.water_01_WatermarkStrategy" />
+        <item itemvalue="Application.water_11_KeyedProcessFunction_Case" />
         <item itemvalue="Application.water_10_Merge_WaterMark_BroadCast" />
+        <item itemvalue="Application.water_10_Merge_WaterMark_BroadCast1" />
+        <item itemvalue="Application.water_09_Split_WaterMark_BroadCast" />
+        <item itemvalue="Application.Bug_KeyBy" />
       </list>
     </recent_temporary>
   </component>
@@ -189,6 +200,7 @@
       <workItem from="1619652712499" duration="5610000" />
       <workItem from="1619660246457" duration="19822000" />
       <workItem from="1619691029660" duration="12660000" />
+      <workItem from="1619738826947" duration="31905000" />
     </task>
     <servers />
   </component>
@@ -200,10 +212,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1619236032243" />
-    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1619700688529">
+    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1619785862461">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1619700688529" />
+    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1619785862461" />
     <state x="413" y="145" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1619592431798">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -216,26 +228,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.738@0.0.1366.738" timestamp="1619609256111" />
-    <state x="325" y="113" key="FileChooserDialogImpl" timestamp="1619697384047">
+    <state x="44" y="99" width="1182" height="554" key="DiffContextDialog" timestamp="1619740482328">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619697384047" />
-    <state width="1323" height="149" key="GridCell.Tab.0.bottom" timestamp="1619711776296">
+    <state x="44" y="99" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1619740482328" />
+    <state x="325" y="113" key="FileChooserDialogImpl" timestamp="1619738866257">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="149" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619711776296" />
-    <state width="1323" height="149" key="GridCell.Tab.0.center" timestamp="1619711776295">
+    <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619738866257" />
+    <state width="1323" height="135" key="GridCell.Tab.0.bottom" timestamp="1619797925273">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="149" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619711776295" />
-    <state width="1323" height="149" key="GridCell.Tab.0.left" timestamp="1619711776294">
+    <state width="1323" height="135" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619797925273" />
+    <state width="1323" height="135" key="GridCell.Tab.0.center" timestamp="1619797925272">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="149" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619711776294" />
-    <state width="1323" height="149" key="GridCell.Tab.0.right" timestamp="1619711776295">
+    <state width="1323" height="135" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619797925272" />
+    <state width="1323" height="135" key="GridCell.Tab.0.left" timestamp="1619797925272">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="149" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619711776295" />
+    <state width="1323" height="135" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619797925272" />
+    <state width="1323" height="135" key="GridCell.Tab.0.right" timestamp="1619797925272">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="135" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619797925272" />
     <state width="1323" height="140" key="GridCell.Tab.1.bottom" timestamp="1619540522264">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -256,26 +272,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1619568296356" />
-    <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1619691028771">
+    <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1619738833859">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1619691028771" />
-    <state x="359" y="102" width="647" height="534" key="find.popup" timestamp="1619660481478">
+    <state x="363" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1619738833859" />
+    <state x="359" y="102" width="647" height="534" key="find.popup" timestamp="1619751133569">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="359" y="102" width="647" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1619660481478" />
+    <state x="359" y="102" width="647" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1619751133569" />
     <state x="57" y="93" key="new project wizard" timestamp="1619236301185">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="57" y="93" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1619236301185" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1619573251950">
+    <state x="339" y="165" key="run.anything.popup" timestamp="1619743961311">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1619573251950" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1619682816182">
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1619743961311" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1619786399301">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1619682816182" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1619786399301" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

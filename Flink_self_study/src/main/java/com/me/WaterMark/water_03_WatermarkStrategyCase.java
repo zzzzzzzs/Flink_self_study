@@ -126,35 +126,4 @@ public class water_03_WatermarkStrategyCase {
         }
     }
 
-
-    // 封装UserBehavior的 POJO类
-    public static class UserBehavior {
-        public String userId;
-        public String itemId;
-        public String categoryId;
-        public String behaviorType; // 用户行为
-        public Long timestamp;
-
-        public UserBehavior() {
-        }
-
-        public UserBehavior(String userId, String itemId, String categoryId, String behaviorType, Long timestamp) {
-            this.userId = userId;
-            this.itemId = itemId;
-            this.categoryId = categoryId;
-            this.behaviorType = behaviorType;
-            this.timestamp = timestamp;
-        }
-
-        @Override
-        public String toString() {
-            return "UserBehavior{" +
-                    "userId='" + userId + '\'' +
-                    ", itemId='" + itemId + '\'' +
-                    ", categoryId='" + categoryId + '\'' +
-                    ", behaviorType='" + behaviorType + '\'' +
-                    ", timestamp=" + new Timestamp(timestamp) +
-                    '}';
-        }
-    }
 }

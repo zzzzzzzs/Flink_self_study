@@ -1,4 +1,4 @@
-package com.me.WaterMark;
+package com.me.bug;
 
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
@@ -18,15 +18,9 @@ import org.apache.flink.util.Collector;
      先设置水位线 -> 分组 -> 开事件窗口（5s）-> 处理
      数据源格式：a 1  【word 事件时间】 ->  map：(word 事件时间)
      当word不一样经过keyBY就会将分区（逻辑分区），然后最大水位线就会复制广播到后面的所有的逻辑分区（有可能不在同一个槽中，但是也会接收到同样的水位线）
-
-     TODO 最好设置成1个并行度。下面按照并行度为1的情况分析：
-            5s的滚动窗口，一个数据源
-            [a 0] keyBy [a]          keyBy
-                  ------>   --->[a 5]-----> 触发窗口，输出：a窗口共有1条数据，b窗口共有1条数据 【[a 5]这条数据会到下一个a的窗口】
-            [b 4]       [b]                         上流数据水位线会复制广播到下游所有的逻辑分区中。（包括不同槽中的分区）。？？？：这里还有一些疑问：并行度不是1，这里好像就不一样了！！感觉是一个BUG
 * */
 
-public class water_09_Split_WaterMark_BroadCast {
+public class Bug_Split_WaterMark_BroadCast {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
@@ -36,16 +30,17 @@ public class water_09_Split_WaterMark_BroadCast {
 //        env.setParallelism(2);
 
         /*
-         TODO bug:   如果并行度设置的不一样的话那么水位线也不一样
-                比如，现在并行度是2，输入 a 0
-                                       b 0
-                                       a 5
-                                       b 5
-                     这个时候水位线到达窗口触发条件，就会打印窗口a 2条数据
-                                                       窗口b 2条数据
-                     但是程序运行的结果是当输入a 5的时候无法触发a窗口，当输入b 5的时候会触发a窗口和b窗口
 
-                目前用的时候需要将并行度设置为 1
+                 TODO bug:   如果并行度设置的不一样的话那么水位线也不一样
+                        比如，现在并行度是2，输入 a 0
+                                               b 0
+                                               a 5
+                                               b 5
+                             这个时候水位线到达窗口触发条件，就会打印窗口a 2条数据
+                                                               窗口b 2条数据
+                             但是程序运行的结果是当输入a 5的时候无法触发a窗口，当输入b 5的时候会触发a窗口和b窗口
+
+                        目前用的时候需要将并行度设置为 1
         */
 
         env

@@ -15,10 +15,10 @@ import org.apache.flink.util.Collector;
 
 
 /*
-    TODO 检测传感器的连续1s温度上升
+ TODO　
 * */
 
-public class water_12_KeyedProcessFunction_Case {
+public class water_12_KeyedProcessFunction_Case_what_to_do {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
@@ -46,7 +46,7 @@ public class water_12_KeyedProcessFunction_Case {
                     public void processElement(SensorReading value, Context ctx, Collector<String> out) throws Exception {
                         listState.add(value);
                         if(timerTs.value() == null){
-                            ctx.timerService().registerEventTimeTimer(ctx.timerService().currentProcessingTime());
+                            ctx.timerService().registerProcessingTimeTimer(ctx.timerService().currentProcessingTime() + 10 * 1000L);
                             timerTs.update(ctx.timerService().currentProcessingTime() + 10 * 1000L);
                         }
                     }

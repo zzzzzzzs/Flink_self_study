@@ -16,7 +16,7 @@ import org.apache.flink.util.Collector;
     TODO 检测传感器的连续1s温度上升
 * */
 
-public class water_11_KeyedProcessFunction_Case {
+public class water_11_KeyedProcessFunction_Case_what_to_do {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);

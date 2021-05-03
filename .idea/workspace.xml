@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_11_KeyedProcessFunction_Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_11_KeyedProcessFunction_Case_what_to_do.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_12_KeyedProcessFunction_Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_12_KeyedProcessFunction_Case_what_to_do.java" afterDir="false" />
-    </list>
+    <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +68,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SparkStreamingRealTimeProjectAnalysis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25897437" />
@@ -95,13 +92,13 @@
       <recent name="com.me.WaterMark" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.water_09_Split_WaterMark_BroadCast">
-    <configuration name="water_09_Split_WaterMark_BroadCast" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.WaterMark.water_09_Split_WaterMark_BroadCast" />
+  <component name="RunManager" selected="Application.transform_04_flatMap">
+    <configuration name="transform_04_flatMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.Transform.transform_04_flatMap" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.WaterMark.*" />
+          <option name="PATTERN" value="com.me.Transform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.transform_04_flatMap" />
         <item itemvalue="Application.water_12_KeyedProcessFunction_Case_what_to_do" />
         <item itemvalue="Application.water_11_KeyedProcessFunction_Case_what_to_do" />
         <item itemvalue="Application.water_10_Merge_WaterMark_BroadCast" />
         <item itemvalue="Application.water_10_Merge_WaterMark_BroadCast1" />
-        <item itemvalue="Application.water_09_Split_WaterMark_BroadCast" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +194,7 @@
       <workItem from="1619876809904" duration="2319000" />
       <workItem from="1619924598690" duration="3522000" />
       <workItem from="1619950482694" duration="260000" />
+      <workItem from="1620049909590" duration="807000" />
     </task>
     <servers />
   </component>
@@ -232,22 +230,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619950718657" />
-    <state width="1323" height="92" key="GridCell.Tab.0.bottom" timestamp="1619950385567">
+    <state width="1323" height="116" key="GridCell.Tab.0.bottom" timestamp="1620057026875">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="92" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1619950385567" />
-    <state width="1323" height="92" key="GridCell.Tab.0.center" timestamp="1619950385567">
+    <state width="1323" height="116" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1620057026875" />
+    <state width="1323" height="116" key="GridCell.Tab.0.center" timestamp="1620057026874">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="92" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1619950385567" />
-    <state width="1323" height="92" key="GridCell.Tab.0.left" timestamp="1619950385567">
+    <state width="1323" height="116" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1620057026874" />
+    <state width="1323" height="116" key="GridCell.Tab.0.left" timestamp="1620057026874">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="92" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1619950385567" />
-    <state width="1323" height="92" key="GridCell.Tab.0.right" timestamp="1619950385567">
+    <state width="1323" height="116" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1620057026874" />
+    <state width="1323" height="116" key="GridCell.Tab.0.right" timestamp="1620057026875">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="92" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1619950385567" />
+    <state width="1323" height="116" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1620057026875" />
     <state width="1323" height="140" key="GridCell.Tab.1.bottom" timestamp="1619540522264">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

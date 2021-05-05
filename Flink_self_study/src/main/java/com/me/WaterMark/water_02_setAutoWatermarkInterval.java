@@ -3,6 +3,7 @@ package com.me.WaterMark;
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.MapFunction;
+import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.windowing.ProcessWindowFunction;
 import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows;
@@ -21,6 +22,7 @@ public class water_02_setAutoWatermarkInterval {
             TODO 每隔1分钟插入一次水位线，默认是200ms
                 这样设置，那么就1分钟更新1次水位线
         */
+//        env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
         env.getConfig().setAutoWatermarkInterval(60 * 1000L);
 
         env

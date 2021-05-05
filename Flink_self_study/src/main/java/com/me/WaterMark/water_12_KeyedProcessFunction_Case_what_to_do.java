@@ -1,7 +1,7 @@
 package com.me.WaterMark;
 
-import com.me.Transform.SensorReading;
-import com.me.Transform.SensorSource;
+import com.me.bean.SensorReading;
+import com.me.source.SensorSource;
 import org.apache.flink.api.common.state.ListState;
 import org.apache.flink.api.common.state.ListStateDescriptor;
 import org.apache.flink.api.common.state.ValueState;

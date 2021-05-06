@@ -1,10 +1,9 @@
 package com.me.WaterMark;
 
+import com.me.bean.UserBehavior;
 import org.apache.flink.api.common.eventtime.*;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-
-import java.sql.Timestamp;
 
 
 /*

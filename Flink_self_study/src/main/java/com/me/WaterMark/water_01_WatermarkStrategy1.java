@@ -1,5 +1,6 @@
 package com.me.WaterMark;
 
+import com.me.bean.Word;
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.MapFunction;
@@ -9,8 +10,6 @@ import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindo
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.util.Collector;
-
-import java.time.Duration;
 
 public class water_01_WatermarkStrategy1 {
     public static void main(String[] args) throws Exception {
@@ -30,10 +29,9 @@ public class water_01_WatermarkStrategy1 {
                 // TODO 必须在keyBY之前生成水平线
                 .assignTimestampsAndWatermarks(
                         // 针对乱序流插入水位线
-                        // 最大延迟时间设置为5s
                         // 默认200ms的机器时间插入一个水位线
                         // 水位线 = 观察到的元素中的最大时间戳 - 最大延迟时间 - 1ms
-                        // 水位线是一直在变化的，直到水位线到达滚动窗口的时间。
+                        // 水位线是一直在变化的，直到水位线到达滚动窗口的时间。并且水位线是一个单调不减的函数
                         WatermarkStrategy.<Word>forMonotonousTimestamps()
                                 .withTimestampAssigner(new SerializableTimestampAssigner<Word>() {
                                     // 抽取时间戳的逻辑

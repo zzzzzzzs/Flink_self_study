@@ -1,5 +1,8 @@
 package com.me.ProcessFunctionAPI;
 
+import org.apache.flink.api.common.state.ValueState;
+import org.apache.flink.api.common.state.ValueStateDescriptor;
+import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.util.Collector;
@@ -31,6 +34,13 @@ public class ProcessFunctionAPI_02_KeyedProcessFunction {
                 .keyBy(r -> true)
                 // TODO KeyedProcessFunction 可以做全部的事情
                 .process(new KeyedProcessFunction<Boolean, String, String>() {
+                    ValueState<Long> tsTimerState;
+
+                    @Override
+                    public void open(Configuration parameters) throws Exception {
+                        tsTimerState =  getRuntimeContext().getState(new ValueStateDescriptor<Long>("ts-timer", Long.class));
+                    }
+
                     //  TODO 每来一条数据，调用一次
                     @Override
                     public void processElement(String value, Context context, Collector<String> collector) throws Exception {
@@ -53,7 +63,8 @@ public class ProcessFunctionAPI_02_KeyedProcessFunction {
                         context.timerService().registerProcessingTimeTimer(currTs + 10 * 1000L);
                         // 事件时间定时器
 //                        context.timerService().registerEventTimeTimer(1000L);
-                        // 删除定时器
+                        tsTimerState.update(context.timerService().currentProcessingTime() + 1000L);
+                        // 删除定时器，先使用状态变量保存时间戳，然后delete
                         //            ctx.timerService().deleteProcessingTimeTimer(tsTimerState.value());
                     }
 
@@ -62,6 +73,10 @@ public class ProcessFunctionAPI_02_KeyedProcessFunction {
                     public void onTimer(long timestamp, OnTimerContext ctx, Collector<String> out) throws Exception {
                         super.onTimer(timestamp, ctx, out);
                         out.collect("定时器触发了，触发时间是：" + new Timestamp(timestamp));
+                        // 时间域，只能判断事件时间，还是处理时间，功能少
+                        ctx.timeDomain();
+                        // 获取当前Key
+                        ctx.getCurrentKey();
                     }
                 })
                 .print();

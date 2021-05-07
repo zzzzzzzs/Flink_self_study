@@ -10,6 +10,17 @@ import org.apache.flink.streaming.api.CheckpointingMode;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
+
+/*
+TODO 每传入一条数据，有状态的算子任务都会读取和更新状态。由于有效的状态访问对于处理数据的低延迟至关重要，
+        因此每个并行任务(子任务)都会在本地维护其状态，以确保快速的状态访问。
+	状态的存储、访问以及维护，由一个可插入的组件决定，这个组件就叫做状态后端（state backend）
+	状态后端主要负责两件事：
+        本地的状态管理
+        将检查点（checkpoint）状态写入远程存储
+
+* */
+
 public class State03_StateBackend {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();

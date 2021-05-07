@@ -26,7 +26,7 @@ public class SinkTest4_Jdbc {
 //            return new SensorReading(fields[0], new Long(fields[1]), new Double(fields[2]));
 //        });
 
-        // TODO 将数据存入到MySQL中，刷新MySQL数据库就会有数据变化
+        // TODO 将数据存入到MySQL中，刷新MySQL数据库就会有数据变化，下游设备很少用MYSQL，因为MySQL扛不住。
         DataStream<SensorReading> dataStream = env.addSource(new SourceTest4_UDF.MySensorSource());
 
         dataStream.addSink(new MyJdbcSink());

@@ -1,4 +1,4 @@
-package com.me.ProcessFunctionAPI;
+package com.me.timer;
 
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
@@ -8,24 +8,13 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.util.Collector;
 
-import java.sql.Timestamp;
-
-
-/*
-    TODO KeyedProcessFunction 和 assignTimestampsAndWatermarks 结合使用
-        这样就可以使用事件时间来
-
-    KeyedProcessFunction 要结合状态变量才可以发挥全部的威力
-*
-* */
-
-public class water_08_WaterMark_KeyedProcessFunction {
+public class timer02_EventTime {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
 
         env
-                .socketTextStream("localhost", 9999)
+                .socketTextStream("bigdata102", 9999)
                 .map(new MapFunction<String, Tuple2<String, Long>>() {
                     @Override
                     public Tuple2<String, Long> map(String value) throws Exception {
@@ -33,7 +22,6 @@ public class water_08_WaterMark_KeyedProcessFunction {
                         return Tuple2.of(arr[0], Long.parseLong(arr[1]) * 1000L);
                     }
                 })
-                // 设置一个
                 .assignTimestampsAndWatermarks(
                         WatermarkStrategy.<Tuple2<String, Long>>forMonotonousTimestamps()
                                 .withTimestampAssigner(new SerializableTimestampAssigner<Tuple2<String, Long>>() {
@@ -46,24 +34,24 @@ public class water_08_WaterMark_KeyedProcessFunction {
                 .keyBy(r -> r.f0)
                 .process(new KeyedProcessFunction<String, Tuple2<String, Long>, String>() {
                     @Override
-                    public void processElement(Tuple2<String, Long> element, Context context, Collector<String> collector) throws Exception {
-                        String s = element.toString() + " 的当前水位线是：" + context.timerService().currentWatermark();
-                        System.out.println(s);
-//                        collector.collect(s);
-                        // 每来一条数据，调用一次
-                        collector.collect("数据到达，当前数据的事件时间是：" + new Timestamp(element.f1));
-                        // 注册10s之后的定时器（事件时间），定时器是onTimer
-                        context.timerService().registerEventTimeTimer(element.f1 + 10 * 1000L);
+                    public void processElement(Tuple2<String, Long> value, Context ctx, Collector<String> out) throws Exception {
+                        // TODO 事件时间超过水位线  5s 后触发定时器
+                        System.out.println("当前水位线是：" + ctx.timerService().currentWatermark());
+                        ctx.timerService().registerEventTimeTimer(value.f1 + 5000L);
+                        out.collect(value.toString());
                     }
 
                     @Override
                     public void onTimer(long timestamp, OnTimerContext ctx, Collector<String> out) throws Exception {
                         super.onTimer(timestamp, ctx, out);
-                        out.collect("定时器触发了，触发时间是：" + new Timestamp(timestamp));
+                        System.out.println(timestamp);
+                        out.collect("我被触发了....");
                     }
                 })
                 .print();
-
         env.execute();
     }
 }
+
+
+

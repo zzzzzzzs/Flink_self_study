@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 /*
-TODO 在map操作中自定义算子状态变量，用的不多
+TODO 在map操作中自定义 OperatorState 算子状态变量，用的不多
 * */
 public class State01_DIYOperatorState {
     public static void main(String[] args) throws Exception {
@@ -47,14 +47,14 @@ public class State01_DIYOperatorState {
             return count;
         }
 
-        // TODO 对状态做快照，Checkpoint时会调用这个方法，我们要实现具体的snapshot逻辑，比如将哪些本地状态持久化
+        // TODO 对状态做快照，Checkpoint时会调用这个方法，我们要实现具体的snapshot逻辑，比如将哪些本地状态持久化，算子状态需要自己实现，键控状态不用
         @Override
         public List<Integer> snapshotState(long checkpointId, long timestamp) throws Exception {
             System.out.println("snapshotState...");
             return Collections.singletonList(count);
         }
 
-        // TODO 做快照，发生故障的时候再恢复
+        // TODO 恢复快照
         @Override
         public void restoreState(List<Integer> state) throws Exception {
             System.out.println("restoreState...");

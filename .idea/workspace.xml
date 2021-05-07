@@ -3,38 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Flink_self_study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/OfficialExample/BatchJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/OfficialExample/StreamingJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/UserBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/bean/UserBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/bean/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_01_WatermarkStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_01_WatermarkStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_01_WatermarkStrategy1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_01_WatermarkStrategy1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_02_setAutoWatermarkInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_02_setAutoWatermarkInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_03_WatermarkStrategyCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/water_03_WatermarkStrategyCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_04_CustomWatermarkStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_04_CustomWatermarkStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_05_WatermarkStrategy_PV_case.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/water_05_WatermarkStrategy_PV_case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_06_WatermarkStrategy_UV_case.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/water_06_WatermarkStrategy_UV_case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_06_WatermarkStrategy_UV_improve_case.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/water_06_WatermarkStrategy_UV_improve_case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_07_KeyedProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_02_KeyedProcessFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_08_WaterMark_KeyedProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/water_08_WaterMark_KeyedProcessFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_09_Split_WaterMark_BroadCast.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_05_Split_WaterMark_BroadCast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_10_Merge_WaterMark_BroadCast.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_06_Merge_WaterMark_BroadCast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_11_KeyedProcessFunction_Case_what_to_do.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/water_11_KeyedProcessFunction_Case_what_to_do.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WaterMark/water_12_KeyedProcessFunction_Case_what_to_do.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/water_12_KeyedProcessFunction_Case_what_to_do.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/transform/transform_11_RichMapFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/transform/transform_11_RichFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/transform/transform_15_ReduceFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/transform/transform_16_AggregateFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window6_function_AggregateFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/transform/transform_16_AggregateFunction1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window5_function_ReduceFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/transform/transform_17_ProcessWindowFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window7_function_ProcessWindowFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/transform/transform_18_AggregateFunction_ProcessWindowFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window8_function_AggregateFunction_ProcessWindowFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/transform/transform_18_AggregateFunction_ProcessWindowFunction1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window8_function_AggregateFunction_ProcessWindowFunction1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/transform/transform_19_recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/DataStructuresAndAlgorithms/transform_19_recursion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window_1_TumblingProcessingTimeWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window1_ProcessTime_TumblingWindows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window_1_TumblingProcessingTimeWindows_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window1_ProcessTime_TumblingWindows_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window_1_TumblingProcessingTimeWindows_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window1_ProcessTime_TumblingWindows_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window_2_SlidingProcessingTimeWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window2_ProcessTime_SlidingWindows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window_3_ProcessingTimeSessionWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window3_ProcessTime_SessionWindows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window_4_CountWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window4_CountWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_01_ProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_01_ProcessFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_02_KeyedProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_02_KeyedProcessFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/water_08_WaterMark_KeyedProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_02_KeyedProcessFunction_EventTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/bug/Word.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sideOutput/sideOutput_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sideOutput/SideOutput01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sink/SinkTest3_Es.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sink/SinkTest3_Es.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sink/SinkTest4_Jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sink/SinkTest4_Jdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/state/State01_DIYOperatorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/state/State01_DIYOperatorState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/state/State03_StateBackend.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/state/State03_StateBackend.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +76,7 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="JavaClassFindUsagesOptions.isSearchForTextOccurrences" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -107,36 +85,36 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25897437" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.me.WaterMark" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.me.requirement" />
-      <recent name="com.me.state" />
-      <recent name="com.me.WaterMark" />
-      <recent name="com.me.transform" />
-      <recent name="com.me.window" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\window" />
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\sink" />
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\source" />
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.me.timer" />
+      <recent name="com.me.sideOutput" />
+      <recent name="com.me.requirement" />
+      <recent name="com.me.state" />
+      <recent name="com.me.WaterMark" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.me.WaterMark" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.KeyedState_TwoSuccessiveTemperatureJumpsasdasda">
-    <configuration name="KeyedState_TwoSuccessiveTemperatureJumps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.requirement.KeyedState_TwoSuccessiveTemperatureJumps" />
+  <component name="RunManager" selected="Application.timer02_EventTime">
+    <configuration name="ProcessFunctionAPI_02_KeyedProcessFunction_EventTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.ProcessFunctionAPI.ProcessFunctionAPI_02_KeyedProcessFunction_EventTime" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.requirement.*" />
+          <option name="PATTERN" value="com.me.timer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeyedState_TwoSuccessiveTemperatureJumpsasdasda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.requirement.KeyedState_TwoSuccessiveTemperatureJumpsasdasda" />
+    <configuration name="SideOutput01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.sideOutput.SideOutput01" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.requirement.*" />
+          <option name="PATTERN" value="com.me.sideOutput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="State01_DIYOperatorState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.state.State01_DIYOperatorState" />
+    <configuration name="SideOutput02_Case" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.sideOutput.SideOutput02_Case" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.state.*" />
+          <option name="PATTERN" value="com.me.sideOutput.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,12 +148,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="State02_KeyedState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.state.State02_KeyedState" />
+    <configuration name="timer01_ProcessingTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.timer.timer01_ProcessingTime" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.state.*" />
+          <option name="PATTERN" value="com.me.timer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -183,12 +161,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.test.Test2" />
+    <configuration name="timer02_EventTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.timer.timer02_EventTime" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.test.*" />
+          <option name="PATTERN" value="com.me.timer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,19 +175,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.State01_DIYOperatorState" />
-      <item itemvalue="Application.Test2" />
-      <item itemvalue="Application.State02_KeyedState" />
-      <item itemvalue="Application.KeyedState_TwoSuccessiveTemperatureJumps" />
-      <item itemvalue="Application.KeyedState_TwoSuccessiveTemperatureJumpsasdasda" />
+      <item itemvalue="Application.SideOutput01" />
+      <item itemvalue="Application.SideOutput02_Case" />
+      <item itemvalue="Application.ProcessFunctionAPI_02_KeyedProcessFunction_EventTime" />
+      <item itemvalue="Application.timer01_ProcessingTime" />
+      <item itemvalue="Application.timer02_EventTime" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KeyedState_TwoSuccessiveTemperatureJumpsasdasda" />
-        <item itemvalue="Application.KeyedState_TwoSuccessiveTemperatureJumps" />
-        <item itemvalue="Application.State02_KeyedState" />
-        <item itemvalue="Application.State01_DIYOperatorState" />
-        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.timer02_EventTime" />
+        <item itemvalue="Application.timer01_ProcessingTime" />
+        <item itemvalue="Application.ProcessFunctionAPI_02_KeyedProcessFunction_EventTime" />
+        <item itemvalue="Application.SideOutput01" />
+        <item itemvalue="Application.SideOutput02_Case" />
       </list>
     </recent_temporary>
   </component>
@@ -244,6 +222,7 @@
       <workItem from="1620186543996" duration="23713000" />
       <workItem from="1620257809264" duration="14240000" />
       <workItem from="1620280746282" duration="26711000" />
+      <workItem from="1620344820747" duration="24370000" />
     </task>
     <servers />
   </component>
@@ -259,22 +238,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1619236032243" />
+    <state x="376" y="38" key="#Test3" timestamp="1620384781788">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="376" y="38" key="#Test3/0.0.1366.738@0.0.1366.738" timestamp="1620384781788" />
+    <state x="376" y="9" key="#Test3_(1)" timestamp="1620386034349">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="376" y="9" key="#Test3_(1)/0.0.1366.738@0.0.1366.738" timestamp="1620386034349" />
     <state x="44" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620200936624">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="44" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1620200936624" />
-    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1620312238128">
+    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1620390299595">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1620312238128" />
+    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1620390299595" />
     <state x="413" y="145" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1619592431798">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="145" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1619592431798" />
-    <state x="462" y="253" width="441" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1620262162590">
+    <state x="462" y="253" width="563" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1620382175086">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="462" y="253" width="441" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1620262162590" />
+    <state x="462" y="253" width="563" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1620382175086" />
     <state x="413" y="115" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619592438689">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -283,6 +270,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.738@0.0.1366.738" timestamp="1619609256111" />
+    <state x="71" y="0" key="CommitChangelistDialog2" timestamp="1620393360533">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="71" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1620393360533" />
     <state x="44" y="99" width="1182" height="554" key="DiffContextDialog" timestamp="1619740482328">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -291,22 +282,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1620272015334" />
-    <state width="1323" height="312" key="GridCell.Tab.0.bottom" timestamp="1620316662884">
+    <state width="1323" height="202" key="GridCell.Tab.0.bottom" timestamp="1620400458355">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="312" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1620316662884" />
-    <state width="1323" height="312" key="GridCell.Tab.0.center" timestamp="1620316662884">
+    <state width="1323" height="202" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1620400458355" />
+    <state width="1323" height="202" key="GridCell.Tab.0.center" timestamp="1620400458355">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="312" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1620316662884" />
-    <state width="1323" height="312" key="GridCell.Tab.0.left" timestamp="1620316662884">
+    <state width="1323" height="202" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1620400458355" />
+    <state width="1323" height="202" key="GridCell.Tab.0.left" timestamp="1620400458354">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="312" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1620316662884" />
-    <state width="1323" height="312" key="GridCell.Tab.0.right" timestamp="1620316662884">
+    <state width="1323" height="202" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1620400458354" />
+    <state width="1323" height="202" key="GridCell.Tab.0.right" timestamp="1620400458355">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="312" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1620316662884" />
+    <state width="1323" height="202" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1620400458355" />
     <state width="1323" height="140" key="GridCell.Tab.1.bottom" timestamp="1619540522264">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -323,18 +314,54 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="140" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1619540522263" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1620200784907">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1620385035678">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1620200784907" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1620385035678" />
     <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1620257975649">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="363" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1620257975649" />
-    <state x="359" y="102" width="703" height="534" key="find.popup" timestamp="1620299469219">
+    <state x="170" y="105" width="1182" height="554" key="dock-window-1" timestamp="1620384798478">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="359" y="102" width="703" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1620299469219" />
+    <state x="170" y="105" width="1182" height="554" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1620384798478" />
+    <state x="128" y="106" width="1182" height="554" key="dock-window-2" timestamp="1620385091451">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="128" y="106" width="1182" height="554" key="dock-window-2/0.0.1366.738@0.0.1366.738" timestamp="1620385091451" />
+    <state x="-73" y="68" width="1182" height="554" key="dock-window-3" timestamp="1620385929691">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="-73" y="68" width="1182" height="554" key="dock-window-3/0.0.1366.738@0.0.1366.738" timestamp="1620385929691" />
+    <state x="0" y="30" width="1182" height="554" key="dock-window-4" timestamp="1620390168743">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="0" y="30" width="1182" height="554" key="dock-window-4/0.0.1366.738@0.0.1366.738" timestamp="1620390168743" />
+    <state x="-7" y="0" width="834" height="745" key="dock-window-5" timestamp="1620390479755">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="-7" y="0" width="834" height="745" key="dock-window-5/0.0.1366.738@0.0.1366.738" timestamp="1620390479755" />
+    <state x="234" y="0" width="1139" height="745" key="dock-window-6" timestamp="1620390326512">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="234" y="0" width="1139" height="745" key="dock-window-6/0.0.1366.738@0.0.1366.738" timestamp="1620390326512" />
+    <state x="92" y="92" width="1182" height="554" key="dock-window-7" timestamp="1620390707156">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="dock-window-7/0.0.1366.738@0.0.1366.738" timestamp="1620390707156" />
+    <state x="68" y="178" width="1182" height="554" key="dock-window-8" timestamp="1620390744873">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="68" y="178" width="1182" height="554" key="dock-window-8/0.0.1366.738@0.0.1366.738" timestamp="1620390744873" />
+    <state x="96" y="191" width="1182" height="554" key="dock-window-9" timestamp="1620396158765">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="96" y="191" width="1182" height="554" key="dock-window-9/0.0.1366.738@0.0.1366.738" timestamp="1620396158765" />
+    <state x="359" y="102" width="703" height="534" key="find.popup" timestamp="1620357089383">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="359" y="102" width="703" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1620357089383" />
     <state x="57" y="93" key="new project wizard" timestamp="1619236301185">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -343,9 +370,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1620299186113" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1620307360782">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1620393651177">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1620307360782" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1620393651177" />
   </component>
 </project>

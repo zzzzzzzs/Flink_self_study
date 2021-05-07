@@ -52,7 +52,7 @@ public class SinkTest3_Es {
             // 创建请求，作为向es发起的写入命令
             IndexRequest indexRequest = Requests.indexRequest()
                     .index("sensor")
-                    .type("readingdata")
+                    .type("readingdata") // ES7不用加type
                     .source(dataSource);
 
             // 用index发送请求

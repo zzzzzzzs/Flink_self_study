@@ -10,8 +10,10 @@ import org.apache.flink.streaming.api.functions.source.SourceFunction;
 import org.apache.flink.util.Collector;
 import org.apache.flink.util.OutputTag;
 
-public class sideOutput_01 {
-    // 定义侧输出标签，注意有花括号
+public class SideOutput01 {
+    /* TODO 定义侧输出标签，注意有花括号
+        OutputTag这个类是带泛型的，但是构造方法没有泛型，用的反射获取到类型信息的时候就会有泛型擦除就得不到类型信息了，所以带上{}，用匿名内部类的方式实现
+     */
     private static OutputTag<String> late = new OutputTag<String>("late-readings") {
     };
     private static OutputTag<String> notLate = new OutputTag<String>("not-late") {
@@ -32,10 +34,11 @@ public class sideOutput_01 {
                                     }
                                 })
                 )
+                // TODO 未迟到的元素正常输出，迟到的元素放到侧输出流上
                 .process(new ProcessFunction<Tuple2<String, Long>, String>() {
                     @Override
                     public void processElement(Tuple2<String, Long> value, Context ctx, Collector<String> out) throws Exception {
-                        System.out.println(ctx.timerService().currentWatermark());
+                        System.out.println("当前水位线：" + ctx.timerService().currentWatermark());
                         if (value.f1 < ctx.timerService().currentWatermark()) {
                             ctx.output(late, "迟到元素来了，时间戳是：" + value.f1);
                         } else {

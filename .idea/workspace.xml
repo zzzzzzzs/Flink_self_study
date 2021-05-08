@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Flink_self_study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_01_ProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_01_ProcessFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_02_KeyedProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_02_KeyedProcessFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/water_08_WaterMark_KeyedProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/ProcessFunctionAPI/ProcessFunctionAPI_02_KeyedProcessFunction_EventTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/bug/Word.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sideOutput/sideOutput_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sideOutput/SideOutput01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sink/SinkTest3_Es.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sink/SinkTest3_Es.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sink/SinkTest4_Jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sink/SinkTest4_Jdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/state/State01_DIYOperatorState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/state/State01_DIYOperatorState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/state/State03_StateBackend.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/state/State03_StateBackend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/state/State03_StateBackend.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/state/State03_StateBackend_Checkpoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +77,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25897437" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -223,6 +215,7 @@
       <workItem from="1620257809264" duration="14240000" />
       <workItem from="1620280746282" duration="26711000" />
       <workItem from="1620344820747" duration="24370000" />
+      <workItem from="1620430994583" duration="11507000" />
     </task>
     <servers />
   </component>
@@ -314,10 +307,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="140" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1619540522263" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1620385035678">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1620458832613">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1620385035678" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1620458832613" />
     <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1620257975649">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -370,9 +363,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1620299186113" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1620393651177">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1620476206393">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1620393651177" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1620476206393" />
   </component>
 </project>

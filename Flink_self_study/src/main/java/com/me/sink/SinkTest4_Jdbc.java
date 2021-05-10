@@ -2,7 +2,7 @@ package com.me.sink;
 
 
 import com.me.bean.SensorReading;
-import com.me.source.SourceTest4_UDF;
+import com.me.source.SourceTest5_UDF;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -27,7 +27,7 @@ public class SinkTest4_Jdbc {
 //        });
 
         // TODO 将数据存入到MySQL中，刷新MySQL数据库就会有数据变化，下游设备很少用MYSQL，因为MySQL扛不住。
-        DataStream<SensorReading> dataStream = env.addSource(new SourceTest4_UDF.MySensorSource());
+        DataStream<SensorReading> dataStream = env.addSource(new SourceTest5_UDF.MySensorSource());
 
         dataStream.addSink(new MyJdbcSink());
 

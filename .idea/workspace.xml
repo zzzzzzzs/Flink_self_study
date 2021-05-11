@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sink/SinkTest4_Jdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/sink/SinkTest4_Jdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/source/SourceTest3_Kafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/source/SourceTest4_Kafka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/source/SourceTest4_UDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/source/SourceTest5_UDF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/source/SourceTest3_socket.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/source/SourceTest3_socket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/source/SourceTest4_Kafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/source/SourceTest4_Kafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window5_function_ReduceFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/window/window5_function_ReduceFunction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hadoop_self_study" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25897437" />
@@ -84,50 +84,24 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.me.WaterMark" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.me.source" />
-      <recent name="com.me.timer" />
-      <recent name="com.me.sideOutput" />
-      <recent name="com.me.requirement" />
-      <recent name="com.me.state" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\window" />
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\sink" />
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\source" />
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.me.window" />
+      <recent name="com.me.source" />
+      <recent name="com.me.timer" />
+      <recent name="com.me.sideOutput" />
+      <recent name="com.me.requirement" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.me.WaterMark" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SourceTest3_socket">
-    <configuration name="ProcessFunctionAPI_02_KeyedProcessFunction_EventTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.ProcessFunctionAPI.ProcessFunctionAPI_02_KeyedProcessFunction_EventTime" />
-      <module name="Flink_self_study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.me.timer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SideOutput01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.sideOutput.SideOutput01" />
-      <module name="Flink_self_study" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.me.sideOutput.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.window5_function_ReduceFunction">
     <configuration name="SourceTest3_socket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.me.source.SourceTest3_socket" />
       <module name="Flink_self_study" />
@@ -141,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="timer01_ProcessingTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.timer.timer01_ProcessingTime" />
+    <configuration name="SourceTest4_Kafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.source.SourceTest4_Kafka" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.timer.*" />
+          <option name="PATTERN" value="com.me.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,12 +128,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="timer02_EventTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.me.timer.timer02_EventTime" />
+    <configuration name="window2_ProcessTime_SlidingWindows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.window.window2_ProcessTime_SlidingWindows" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.me.timer.*" />
+          <option name="PATTERN" value="com.me.window.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="window2_ProcessTime_SlidingWindows1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.window.window2_ProcessTime_SlidingWindows1" />
+      <module name="Flink_self_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.window.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="window5_function_ReduceFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.window.window5_function_ReduceFunction" />
+      <module name="Flink_self_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,19 +168,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SideOutput01" />
-      <item itemvalue="Application.ProcessFunctionAPI_02_KeyedProcessFunction_EventTime" />
-      <item itemvalue="Application.timer01_ProcessingTime" />
-      <item itemvalue="Application.timer02_EventTime" />
       <item itemvalue="Application.SourceTest3_socket" />
+      <item itemvalue="Application.window2_ProcessTime_SlidingWindows" />
+      <item itemvalue="Application.window2_ProcessTime_SlidingWindows1" />
+      <item itemvalue="Application.SourceTest4_Kafka" />
+      <item itemvalue="Application.window5_function_ReduceFunction" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.window5_function_ReduceFunction" />
+        <item itemvalue="Application.SourceTest4_Kafka" />
+        <item itemvalue="Application.window2_ProcessTime_SlidingWindows1" />
+        <item itemvalue="Application.window2_ProcessTime_SlidingWindows" />
         <item itemvalue="Application.SourceTest3_socket" />
-        <item itemvalue="Application.timer02_EventTime" />
-        <item itemvalue="Application.timer01_ProcessingTime" />
-        <item itemvalue="Application.ProcessFunctionAPI_02_KeyedProcessFunction_EventTime" />
-        <item itemvalue="Application.SideOutput01" />
       </list>
     </recent_temporary>
   </component>
@@ -219,6 +219,7 @@
       <workItem from="1620430994583" duration="11507000" />
       <workItem from="1620517910831" duration="1197000" />
       <workItem from="1620628739673" duration="9230000" />
+      <workItem from="1620690128971" duration="17146000" />
     </task>
     <servers />
   </component>
@@ -246,10 +247,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="44" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1620200936624" />
-    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1620390299595">
+    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1620712192159">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1620390299595" />
+    <state x="436" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1620712192159" />
     <state x="413" y="145" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1619592431798">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -274,26 +275,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="44" y="99" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1619740482328" />
-    <state x="325" y="113" key="FileChooserDialogImpl" timestamp="1620528801828">
+    <state x="325" y="113" key="FileChooserDialogImpl" timestamp="1620718196521">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1620528801828" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1620661391612">
+    <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1620718196521" />
+    <state width="1323" height="199" key="GridCell.Tab.0.bottom" timestamp="1620747577077">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1620661391612" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1620661391610">
+    <state width="1323" height="199" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1620747577077" />
+    <state width="1323" height="199" key="GridCell.Tab.0.center" timestamp="1620747577076">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1620661391610" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1620661391608">
+    <state width="1323" height="199" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1620747577076" />
+    <state width="1323" height="199" key="GridCell.Tab.0.left" timestamp="1620747577076">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1620661391608" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1620661391611">
+    <state width="1323" height="199" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1620747577076" />
+    <state width="1323" height="199" key="GridCell.Tab.0.right" timestamp="1620747577076">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1620661391611" />
+    <state width="1323" height="199" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1620747577076" />
     <state width="1323" height="140" key="GridCell.Tab.1.bottom" timestamp="1619540522264">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -354,10 +355,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="96" y="191" width="1182" height="554" key="dock-window-9/0.0.1366.738@0.0.1366.738" timestamp="1620396158765" />
-    <state x="359" y="102" width="703" height="534" key="find.popup" timestamp="1620357089383">
+    <state x="359" y="102" width="703" height="534" key="find.popup" timestamp="1620722673353">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="359" y="102" width="703" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1620357089383" />
+    <state x="359" y="102" width="703" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1620722673353" />
     <state x="57" y="93" key="new project wizard" timestamp="1619236301185">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -366,9 +367,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1620299186113" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1620476206393">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1620745149258">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1620476206393" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1620745149258" />
   </component>
 </project>

@@ -1,6 +1,5 @@
 package com.me.cep;
 
-import com.me.bean.Event;
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.state.ValueState;
@@ -14,10 +13,42 @@ import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.util.Collector;
 
 import java.util.HashMap;
+//                                  reset
+//                         +------------------------+
+//                         |                        |
+//                         |                        |
+//                         |                        |
+//                         v                        |
+//                     +---------+  success   +-----------+
+//         +---------->+INITIAL  +----------->+SUCCESS    |
+//         |           +---------+            +-----------+
+//         |                |                       ^   ^
+//         |           fail |                       |   |
+//         |                |              success  |   |
+//         |                v                       |   |
+//         |           +---------+                  |   |
+//         |           |   S1    +------------------+   |
+//         |           +---------+                      |
+//         |                |                           |
+//   reset |           fail |                           |
+//         |                |                    success|
+//         |                v                           |
+//         |           +---------+                      |
+//         |           |   S2    +----------------------+
+//         |           +---------+
+//         |                |
+//         |                |
+//         |           fail |
+//         |                |
+//         |                v
+//         |           +---------+
+//         +-----------+  FAIL   |
+//                     +---------+
 
-public class cep1 {
+// TODO 使用状态机实现连续三次登录失败
+// TODO 如果在工作中可以将状态机画出来，可以减少大量的if else
+public class NFA_UserFailedThreeConsecutiveTimes {
     private static HashMap<Tuple2<String, String>, String> statemachine = new HashMap<>();
-
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
@@ -43,7 +74,6 @@ public class cep1 {
                 .keyBy(r -> r.userId)
                 .process(new KeyedProcessFunction<String, Event, String>() {
                     private ValueState<String> state;
-
                     @Override
                     public void open(Configuration parameters) throws Exception {
                         super.open(parameters);
@@ -51,7 +81,7 @@ public class cep1 {
                         state = getRuntimeContext().getState(
                                 new ValueStateDescriptor<String>("state", Types.STRING)
                         );
-
+                        // TODO 初始化状态机
                         statemachine.put(Tuple2.of("initial", "fail"), "S1");
                         statemachine.put(Tuple2.of("initial", "success"), "SUCCESS");
                         statemachine.put(Tuple2.of("S1", "fail"), "S2");
@@ -80,5 +110,29 @@ public class cep1 {
                 .print();
 
         env.execute();
+    }
+
+    public static class Event {
+        public String userId;
+        public String eventType;
+        public Long timestamp;
+
+        public Event(String userId, String eventType, Long timestamp) {
+            this.userId = userId;
+            this.eventType = eventType;
+            this.timestamp = timestamp;
+        }
+
+        public Event() {
+        }
+
+        @Override
+        public String toString() {
+            return "Event{" +
+                    "userId='" + userId + '\'' +
+                    ", eventType='" + eventType + '\'' +
+                    ", timestamp=" + timestamp +
+                    '}';
+        }
     }
 }

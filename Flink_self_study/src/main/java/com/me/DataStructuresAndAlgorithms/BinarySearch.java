@@ -1,5 +1,7 @@
 package com.me.DataStructuresAndAlgorithms;
 
+
+// TODO 二分查找的精髓就是排序
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = new int[100000000];

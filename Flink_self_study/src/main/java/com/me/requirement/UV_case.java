@@ -13,20 +13,22 @@ import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.util.Collector;
 
 import java.sql.Timestamp;
+import java.util.HashSet;
 
 
 /*
     TODO 窗口开始时间 = 时间戳 - 时间戳 % 窗口长度
         窗口结束时间 = 时间戳 - 时间戳 % 窗口长度 + 窗口长度
-        每个窗口的pv数据 PageView 页面浏览次数（访问量）
+        每个窗口的uv数据 Unique Visitor 独立访客 使用pv去重以后就是uv
 * */
-public class water_05_WatermarkStrategy_PV_case {
+public class UV_case {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
 
         /*
-            TODO 需求：统计每个窗口（1个小时）的pv数
+            TODO 需求：统计每个窗口（1个小时）的uv数，需要使用userID去重
+                使用HashSet的幂等性
         * */
         env
                 .readTextFile("./file/UserBehavior.csv")
@@ -52,40 +54,44 @@ public class water_05_WatermarkStrategy_PV_case {
                                 })
                 )
                 .windowAll(TumblingEventTimeWindows.of(Time.hours(1)))
-                .aggregate(new CountAgg(), new PV())
+                .aggregate(new CountAgg(), new UV())
                 .print();
 
         env.execute();
     }
 
-    public static class CountAgg implements AggregateFunction<UserBehavior, Long, Long> {
+
+    // TODO 重点：使用HashSet将userId去重，但是内存占用高，后面会使用bloom filter
+    public static class CountAgg implements AggregateFunction<UserBehavior, HashSet<String>, Long> {
+
         @Override
-        public Long createAccumulator() {
-            return 0L;
+        public HashSet<String> createAccumulator() {
+            return new HashSet<String>();
         }
 
         @Override
-        public Long add(UserBehavior value, Long accumulator) {
-            return accumulator + 1L;
-        }
-
-        @Override
-        public Long getResult(Long accumulator) {
+        public HashSet<String> add(UserBehavior value, HashSet<String> accumulator) {
+            accumulator.add(value.userId);
             return accumulator;
         }
 
         @Override
-        public Long merge(Long a, Long b) {
+        public Long getResult(HashSet<String> accumulator) {
+            return (long) accumulator.size();
+        }
+
+        @Override
+        public HashSet<String> merge(HashSet<String> a, HashSet<String> b) {
             return null;
         }
     }
 
-    public static class PV extends ProcessAllWindowFunction<Long, String, TimeWindow> {
+    public static class UV extends ProcessAllWindowFunction<Long, String, TimeWindow> {
         @Override
         public void process(Context context, Iterable<Long> iterable, Collector<String> collector) throws Exception {
             String windowStart = new Timestamp(context.window().getStart()).toString();
             String windowEnd = new Timestamp(context.window().getEnd()).toString();
-            collector.collect(windowStart + "~" + windowEnd + "的pv数据是：" + iterable.iterator().next());
+            collector.collect(windowStart + "~" + windowEnd + "的uv数据是：" + iterable.iterator().next());
         }
     }
 }

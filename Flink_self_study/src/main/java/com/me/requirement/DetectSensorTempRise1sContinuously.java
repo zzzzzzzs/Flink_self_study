@@ -13,14 +13,17 @@ import org.apache.flink.util.Collector;
 
 
 /*
-    TODO 检测传感器的连续1s温度上升
+    TODO 检测传感器的连续1s温度上升，
+        1,2,3,4,5,1,2
+        当第一个到达的数据会注册一个 1s 的定时器，然后在这 1s 内检测温度是否连续上升
 * */
 
-public class water_11_KeyedProcessFunction_Case_what_to_do {
+public class DetectSensorTempRise1sContinuously {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
         env
+                // 1s生产10条数据
                 .addSource(new SensorSource())
                 .keyBy(r -> r.id)
                 .process(new TempIncrease())
@@ -42,7 +45,7 @@ public class water_11_KeyedProcessFunction_Case_what_to_do {
         @Override
         public void open(Configuration parameters) throws Exception {
             super.open(parameters);
-            // TODO　在这里初始化状态变量
+            // TODO　在这里初始化状态变量，状态变量有可能保存在hdfs或者文件系统里面，所以用这样的方式定义
             lastTemp = getRuntimeContext().getState(new ValueStateDescriptor<Double>("last-temp", Types.DOUBLE));
             timerTs = getRuntimeContext().getState(new ValueStateDescriptor<Long>("timer-Ts", Types.LONG));
         }
@@ -50,6 +53,7 @@ public class water_11_KeyedProcessFunction_Case_what_to_do {
         // 每来一条数据就触发一次
         @Override
         public void processElement(SensorReading value, Context ctx, Collector<String> out) throws Exception {
+            System.out.println(value.temperature);
             double prevTemp = 0.0; // 最近一次温度初始化
             if (lastTemp.value() == null) {
                 // 当第一条数据到来时，状态变量为空
@@ -64,13 +68,17 @@ public class water_11_KeyedProcessFunction_Case_what_to_do {
             } else {
                 ts = timerTs.value();
             }
-
+            // 初始温度等于0 或者 温度下降
             if (prevTemp == 0.0 || value.temperature < prevTemp) {
                 // 如果没有对应的定时器存在，语句不执行
                 ctx.timerService().deleteEventTimeTimer(ts);
+                // 将报警定时器时间戳的状态变量清空
                 timerTs.clear();
+                // 温度上升 且 不存在报警定时器
             } else if (value.temperature > prevTemp && ts == 0L) {
+                // 注册报警定时器 = 当前时间 + 1s
                 ctx.timerService().registerEventTimeTimer(ctx.timerService().currentProcessingTime() + 1000L);
+                // 将定时器时间戳保存到状态变量中
                 timerTs.update(ctx.timerService().currentProcessingTime() + 1000L);
             }
         }

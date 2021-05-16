@@ -29,7 +29,7 @@ public class SensorSource extends RichParallelSourceFunction<SensorReading> {
                 // 使用了上下文的collect方法来向下游发出数据
                 sourceContext.collect(SensorReading.of(sensorIds[i], curFTemps[i], curTs));
             }
-            Thread.sleep(100L); // 每隔100ms发送一次传感器数据
+            Thread.sleep(1000L); // 每隔100ms发送一次传感器数据
         }
     }
 

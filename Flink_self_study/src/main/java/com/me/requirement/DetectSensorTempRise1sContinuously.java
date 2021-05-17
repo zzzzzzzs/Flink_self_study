@@ -10,6 +10,9 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.util.Collector;
 
+import java.sql.Timestamp;
+import java.text.MessageFormat;
+
 
 
 /*
@@ -52,15 +55,14 @@ public class DetectSensorTempRise1sContinuously {
 
         // 每来一条数据就触发一次
         @Override
-        public void processElement(SensorReading value, Context ctx, Collector<String> out) throws Exception {
-            System.out.println(value.temperature);
+        public void processElement(SensorReading sensorReading, Context ctx, Collector<String> out) throws Exception {
             double prevTemp = 0.0; // 最近一次温度初始化
             if (lastTemp.value() == null) {
                 // 当第一条数据到来时，状态变量为空
-                lastTemp.update(value.temperature);
+                lastTemp.update(sensorReading.temperature);
             } else {
                 prevTemp = lastTemp.value();
-                lastTemp.update(value.temperature);
+                lastTemp.update(sensorReading.temperature);
             }
             long ts = 0L;
             if (timerTs.value() == null) {
@@ -69,15 +71,15 @@ public class DetectSensorTempRise1sContinuously {
                 ts = timerTs.value();
             }
             // 初始温度等于0 或者 温度下降
-            if (prevTemp == 0.0 || value.temperature < prevTemp) {
+            if (prevTemp == 0.0 || sensorReading.temperature < prevTemp) {
                 // 如果没有对应的定时器存在，语句不执行
                 ctx.timerService().deleteEventTimeTimer(ts);
                 // 将报警定时器时间戳的状态变量清空
                 timerTs.clear();
                 // 温度上升 且 不存在报警定时器
-            } else if (value.temperature > prevTemp && ts == 0L) {
+            } else if (sensorReading.temperature > prevTemp && ts == 0L) {
                 // 注册报警定时器 = 当前时间 + 1s
-                ctx.timerService().registerEventTimeTimer(ctx.timerService().currentProcessingTime() + 1000L);
+                ctx.timerService().registerProcessingTimeTimer(ctx.timerService().currentProcessingTime() + 1000L);
                 // 将定时器时间戳保存到状态变量中
                 timerTs.update(ctx.timerService().currentProcessingTime() + 1000L);
             }
@@ -86,7 +88,8 @@ public class DetectSensorTempRise1sContinuously {
         @Override
         public void onTimer(long timestamp, OnTimerContext ctx, Collector<String> out) throws Exception {
             super.onTimer(timestamp, ctx, out);
-            out.collect("连续1s温度上升了！传感器是：" + ctx.getCurrentKey());
+            String ss =  MessageFormat.format("连续1s温度上升了！传感器是：{0} 当前时间是：{1}", ctx.getCurrentKey(), new Timestamp(ctx.timerService().currentProcessingTime()));
+            out.collect(ss);
             timerTs.clear();
         }
     }

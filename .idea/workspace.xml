@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/cep/cep1_UserFailedThreeConsecutiveTimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/DataStructuresAndAlgorithms/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/DataStructuresAndAlgorithms/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/cep/cep1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/water_05_WatermarkStrategy_PV_case.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/PV_case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/water_06_WatermarkStrategy_UV_case.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/UV_case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/water_06_WatermarkStrategy_UV_improve_case.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/water_11_KeyedProcessFunction_Case_what_to_do.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/DetectSensorTempRise1sContinuously.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/source/SensorSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/source/SensorSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/DetectSensorTempRise1sContinuously.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/DetectSensorTempRise1sContinuously.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/LiveHotItemsEveryHour.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/requirement/LiveHotItemsEveryHour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/test/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/test/Test3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +74,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mini-flink" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../aMyStudy/bigdata/024_大数据技术之Flink/4.视频/代码2021-05-07/Flink1116（5）" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25897437" />
@@ -174,7 +168,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.water_05_WatermarkStrategy_PV_case" />
+      <item itemvalue="Application.PV_case" />
       <item itemvalue="Application.UV_BloomFilter" />
       <item itemvalue="Application.DetectSensorTempRise1sContinuously" />
       <item itemvalue="Application.SimulateTumblingWindow" />
@@ -186,7 +180,6 @@
         <item itemvalue="Application.DetectSensorTempRise1sContinuously" />
         <item itemvalue="Application.SimulateTumblingWindow" />
         <item itemvalue="Application.UV_BloomFilter" />
-        <item itemvalue="Application.water_05_WatermarkStrategy_PV_case" />
       </list>
     </recent_temporary>
   </component>
@@ -232,6 +225,7 @@
       <workItem from="1621034485920" duration="3746000" />
       <workItem from="1621062355941" duration="5392000" />
       <workItem from="1621127138775" duration="19483000" />
+      <workItem from="1621208326079" duration="9910000" />
     </task>
     <servers />
   </component>
@@ -239,6 +233,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="346" y="38" key="#DetectSensorTempRise1sContinuously" timestamp="1621209527061">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="38" key="#DetectSensorTempRise1sContinuously/0.0.1366.738@0.0.1366.738" timestamp="1621209527061" />
     <state x="275" y="27" key="#Java" timestamp="1620262986647">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -283,30 +281,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="71" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1620393360533" />
-    <state x="44" y="99" width="1182" height="554" key="DiffContextDialog" timestamp="1621171082879">
+    <state x="44" y="99" width="1182" height="554" maximized="true" key="DiffContextDialog" timestamp="1621209555420">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="44" y="99" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1621171082879" />
-    <state x="325" y="113" key="FileChooserDialogImpl" timestamp="1621161473720">
+    <state x="44" y="99" width="1182" height="554" maximized="true" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1621209555420" />
+    <state x="325" y="113" key="FileChooserDialogImpl" timestamp="1621208358942">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1621161473720" />
-    <state width="1323" height="155" key="GridCell.Tab.0.bottom" timestamp="1621181071125">
+    <state x="325" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1621208358942" />
+    <state width="1323" height="215" key="GridCell.Tab.0.bottom" timestamp="1621246598695">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="155" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1621181071125" />
-    <state width="1323" height="155" key="GridCell.Tab.0.center" timestamp="1621181071124">
+    <state width="1323" height="215" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1621246598695" />
+    <state width="1323" height="215" key="GridCell.Tab.0.center" timestamp="1621246598695">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="155" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1621181071124" />
-    <state width="1323" height="155" key="GridCell.Tab.0.left" timestamp="1621181071124">
+    <state width="1323" height="215" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1621246598695" />
+    <state width="1323" height="215" key="GridCell.Tab.0.left" timestamp="1621246598694">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="155" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1621181071124" />
-    <state width="1323" height="155" key="GridCell.Tab.0.right" timestamp="1621181071125">
+    <state width="1323" height="215" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1621246598694" />
+    <state width="1323" height="215" key="GridCell.Tab.0.right" timestamp="1621246598695">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="155" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1621181071125" />
+    <state width="1323" height="215" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1621246598695" />
     <state width="1323" height="140" key="GridCell.Tab.1.bottom" timestamp="1619540522264">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -367,10 +365,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="96" y="191" width="1182" height="554" key="dock-window-9/0.0.1366.738@0.0.1366.738" timestamp="1620396158765" />
-    <state x="359" y="102" width="800" height="534" key="find.popup" timestamp="1621179924743">
+    <state x="359" y="102" width="800" height="534" key="find.popup" timestamp="1621212282091">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="359" y="102" width="800" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1621179924743" />
+    <state x="359" y="102" width="800" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1621212282091" />
     <state x="57" y="93" key="new project wizard" timestamp="1619236301185">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -379,9 +377,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1620299186113" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1621178165519">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1621226815251">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1621178165519" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1621226815251" />
   </component>
 </project>

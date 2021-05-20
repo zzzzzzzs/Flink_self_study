@@ -32,7 +32,6 @@ public class transform_08_union {
         DataStream<SensorReading> union = sensor_1.union(sensor_2, sensor_3);
 
         union.print();
-
         env.execute();
     }
 }

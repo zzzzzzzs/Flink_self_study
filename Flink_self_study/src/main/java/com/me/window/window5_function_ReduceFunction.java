@@ -16,7 +16,7 @@ import org.apache.flink.streaming.api.windowing.time.Time;
 TODO AggregateFunction(增量聚合函数)
     此方法和强大 可以代替ReduceFunction.
     ReduceFunction & AggregateFunction更加高效, 原因就是Flink可以对到来的元素进行增量聚合 .
-
+        reduce 输入输出类型一样
     ReduceFunction, AggregateFunction
     每条数据到来就进行计算，只保存一个简单的状态（累加器）
     当窗口闭合的时候，增量聚合完成

@@ -6,15 +6,8 @@ import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.streaming.api.functions.ProcessFunction;
-import org.apache.flink.streaming.api.functions.windowing.ProcessWindowFunction;
-import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows;
-import org.apache.flink.streaming.api.windowing.time.Time;
-import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.util.Collector;
-
-import java.sql.Timestamp;
 
 
 
@@ -22,10 +15,10 @@ import java.sql.Timestamp;
     TODO 合流水位线传播
 * */
 
-public class water_06_Merge_WaterMark_BroadCast {
+public class water_06_Merge_WaterMark_BroadCast1 {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-        env.setParallelism(1);
+        env.setParallelism(2);
 
         SingleOutputStreamOperator<Tuple2<String, Long>> stream1 = env
                 .socketTextStream("bigdata102", 9999)

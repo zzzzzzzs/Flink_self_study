@@ -187,6 +187,11 @@ under the License.
             <version>${flink.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-runtime-web_2.12</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
 
 
         <!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin &ndash;&gt;-->

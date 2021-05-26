@@ -70,11 +70,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FlinkRealTimeProjectAnalysis" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25897437" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -236,6 +236,7 @@
       <workItem from="1621899027386" duration="3707000" />
       <workItem from="1621945899848" duration="696000" />
       <workItem from="1621956159803" duration="1520000" />
+      <workItem from="1621985611956" duration="6754000" />
     </task>
     <servers />
   </component>
@@ -299,10 +300,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="44" y="99" width="1182" height="554" maximized="true" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1621209555420" />
-    <state x="325" y="113" width="575" height="518" key="FileChooserDialogImpl" timestamp="1621956329212">
+    <state x="325" y="113" width="575" height="518" key="FileChooserDialogImpl" timestamp="1622026739259">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="325" y="113" width="575" height="518" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1621956329212" />
+    <state x="325" y="113" width="575" height="518" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1622026739259" />
     <state width="1323" height="168" key="GridCell.Tab.0.bottom" timestamp="1621869281189">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -339,14 +340,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="254" y="31" key="Registry/0.0.1366.738@0.0.1366.738" timestamp="1621582530972" />
-    <state x="65" y="22" key="SettingsEditor" timestamp="1621956290699">
+    <state x="65" y="22" key="SettingsEditor" timestamp="1622023394272">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="65" y="22" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1621956290699" />
-    <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1621956175466">
+    <state x="65" y="22" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1622023394272" />
+    <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1621986237537">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="363" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1621956175466" />
+    <state x="363" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1621986237537" />
     <state x="62" y="145" width="1182" height="554" key="dock-window-1" timestamp="1620958019054">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -395,10 +396,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1620299186113" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1621957864393">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1621986461160">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1621957864393" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1621986461160" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

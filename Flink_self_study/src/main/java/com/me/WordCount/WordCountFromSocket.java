@@ -21,7 +21,7 @@ public class WordCountFromSocket {
         // 先启动nc -lk 9999
         // windows运行：nc -lp 9999
         DataStreamSource<String> stream = env
-                .socketTextStream("localhost", 9999);
+                .socketTextStream("bigdata102", 9999);
 
         // map操作：string => (string, 1)
         // flatMap的语义：将列表中的每一个元素转化成0个，1个或者多个元素

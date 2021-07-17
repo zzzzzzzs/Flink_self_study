@@ -3,11 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromSocket.java" afterDir="false" />
 =======
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 >>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flink_self_study/Flink_self_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/Flink_self_study.iml" afterDir="false" />
+>>>>>>> 54d3f5450624631b99814515e58283762b88ec44
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +77,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 =======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Scala_self_study" />
 >>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FlinkRealTimeProjectAnalysis" />
+>>>>>>> 54d3f5450624631b99814515e58283762b88ec44
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25897437" />
@@ -84,8 +94,11 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.me.WaterMark" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\window" />
+      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\sink" />
+      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\source" />
+      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.me.WordCount" />
@@ -94,11 +107,8 @@
       <recent name="com.me.transform" />
       <recent name="com.me.cep" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\window" />
-      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\sink" />
-      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me\source" />
-      <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.me.WaterMark" />
     </key>
   </component>
 <<<<<<< HEAD
@@ -291,7 +301,11 @@
       <workItem from="1625529946386" duration="171000" />
       <workItem from="1625530134942" duration="718000" />
       <workItem from="1625709837776" duration="1601000" />
+<<<<<<< HEAD
 >>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
+=======
+      <workItem from="1626165593653" duration="518000" />
+>>>>>>> 54d3f5450624631b99814515e58283762b88ec44
     </task>
     <servers />
   </component>
@@ -363,10 +377,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="44" y="99" width="1182" height="554" maximized="true" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1621209555420" />
-    <state x="305" y="105" width="575" height="518" key="FileChooserDialogImpl" timestamp="1625710182997">
+    <state x="305" y="105" width="575" height="518" key="FileChooserDialogImpl" timestamp="1626165747292">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="305" y="105" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1625710182997" />
+    <state x="305" y="105" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1626165747292" />
     <state x="325" y="113" width="575" height="518" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1622727886630" />
 <<<<<<< HEAD
     <state width="1323" height="125" key="GridCell.Tab.0.bottom" timestamp="1623679484376">

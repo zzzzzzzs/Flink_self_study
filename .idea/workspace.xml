@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01e819dc-a1e8-4da1-9748-0e934efe03f5" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/Flink_self_study/src/main/java/com/me/WordCount/WordCountFromSocket.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +44,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="D:\Data\JavaWarehouse\RepoMaven" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../JavaWarehouse/apache-maven-3.8.1" />
-        <option name="userSettingsFile" value="D:\Data\JavaWarehouse\apache-maven-3.8.1\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -72,7 +70,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Scala_self_study" />
+>>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.25897437" />
@@ -99,9 +101,15 @@
       <recent name="D:\Data\KnowledgeWarehouse\code\Flink_self_study\Flink_self_study\src\main\java\com\me" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.WordCountFromSocket1">
     <configuration name="Bug_KeyBy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.me.bug.Bug_KeyBy" />
+=======
+  <component name="RunManager" selected="Application.WordCountFromBatch2">
+    <configuration name="RedirectLateEvent_01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.lataElement.RedirectLateEvent_01" />
+>>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
@@ -126,8 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="WordCountFromBatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.me.WordCount.WordCountFromBatch" />
+=======
+    <configuration name="WordCountFromBatch2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.WordCount.WordCountFromBatch2" />
+>>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
@@ -139,12 +152,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="WordCountFromSocket1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.me.WordCount.WordCountFromSocket1" />
       <module name="Flink_self_study" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.me.WordCount.*" />
+=======
+    <configuration name="water_01_WatermarkStrategy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.me.test.water_01_WatermarkStrategy" />
+      <module name="Flink_self_study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.me.test.*" />
+>>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,6 +188,7 @@
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="Application.WordCountFromSocket1" />
       <item itemvalue="Application.WordCountFromBatch" />
       <item itemvalue="Application.WordCountExample" />
@@ -179,6 +202,21 @@
         <item itemvalue="Application.WordCountFromSocketProductionEnvironment" />
         <item itemvalue="Application.WordCountExample" />
         <item itemvalue="Application.WordCountFromBatch" />
+=======
+      <item itemvalue="Application.water_06_Merge_WaterMark_BroadCast" />
+      <item itemvalue="Application.water_01_WatermarkStrategy" />
+      <item itemvalue="Application.RedirectLateEvent_01" />
+      <item itemvalue="Application.WordCountExample" />
+      <item itemvalue="Application.WordCountFromBatch2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WordCountFromBatch2" />
+        <item itemvalue="Application.WordCountExample" />
+        <item itemvalue="Application.RedirectLateEvent_01" />
+        <item itemvalue="Application.water_01_WatermarkStrategy" />
+        <item itemvalue="Application.water_06_Merge_WaterMark_BroadCast" />
+>>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +282,16 @@
       <workItem from="1622106285717" duration="144000" />
       <workItem from="1622634796893" duration="1095000" />
       <workItem from="1622727420418" duration="551000" />
+<<<<<<< HEAD
       <workItem from="1623663177421" duration="3249000" />
+=======
+      <workItem from="1624933384641" duration="427000" />
+      <workItem from="1625478550148" duration="867000" />
+      <workItem from="1625529699307" duration="189000" />
+      <workItem from="1625529946386" duration="171000" />
+      <workItem from="1625530134942" duration="718000" />
+      <workItem from="1625709837776" duration="1601000" />
+>>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
     </task>
     <servers />
   </component>
@@ -252,10 +299,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="240" y="163" width="625" height="431" key="#Custom_Plugin_Repositories" timestamp="1625530106837">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="240" y="163" width="625" height="431" key="#Custom_Plugin_Repositories/0.0.1280.689@0.0.1280.689" timestamp="1625530106837" />
     <state x="346" y="38" key="#DetectSensorTempRise1sContinuously" timestamp="1621209527061">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="346" y="38" key="#DetectSensorTempRise1sContinuously/0.0.1366.738@0.0.1366.738" timestamp="1621209527061" />
+    <state x="152" y="3" key="#HTTP_Proxy" timestamp="1625530081740">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="152" y="3" key="#HTTP_Proxy/0.0.1280.689@0.0.1280.689" timestamp="1625530081740" />
     <state x="275" y="27" key="#Java" timestamp="1620262986647">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -308,10 +363,12 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="44" y="99" width="1182" height="554" maximized="true" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1621209555420" />
-    <state x="325" y="113" width="575" height="518" key="FileChooserDialogImpl" timestamp="1622727886630">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="305" y="105" width="575" height="518" key="FileChooserDialogImpl" timestamp="1625710182997">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="305" y="105" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1625710182997" />
     <state x="325" y="113" width="575" height="518" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1622727886630" />
+<<<<<<< HEAD
     <state width="1323" height="125" key="GridCell.Tab.0.bottom" timestamp="1623679484376">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -328,6 +385,32 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="125" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1623679484375" />
+=======
+    <state width="1237" height="378" key="GridCell.Tab.0.bottom" timestamp="1625487441938">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="378" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1625487441938" />
+    <state width="1237" height="171" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1624933813024" />
+    <state width="1323" height="197" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1622100931005" />
+    <state width="1237" height="378" key="GridCell.Tab.0.center" timestamp="1625487441937">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="378" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1625487441937" />
+    <state width="1237" height="171" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1624933813023" />
+    <state width="1323" height="197" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1622100931005" />
+    <state width="1237" height="378" key="GridCell.Tab.0.left" timestamp="1625487441937">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="378" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1625487441937" />
+    <state width="1237" height="171" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1624933813023" />
+    <state width="1323" height="197" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1622100931005" />
+    <state width="1237" height="378" key="GridCell.Tab.0.right" timestamp="1625487441937">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="378" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1625487441937" />
+    <state width="1237" height="171" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1624933813023" />
+    <state width="1323" height="197" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1622100931005" />
+>>>>>>> 1954a3117717598b369dcebef9fd082d1078bdde
     <state width="1323" height="168" key="GridCell.Tab.1.bottom" timestamp="1621869281190">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -348,17 +431,20 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="254" y="31" key="Registry/0.0.1366.738@0.0.1366.738" timestamp="1621582530972" />
-    <state x="65" y="22" key="SettingsEditor" timestamp="1622023394272">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="61" y="0" key="SettingsEditor" timestamp="1625530117990">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="61" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1625530117990" />
+    <state x="61" y="0" key="SettingsEditor/0.0.1280.690@0.0.1280.690" timestamp="1624933426957" />
     <state x="65" y="22" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1622023394272" />
     <state x="404" y="110" width="582" height="524" key="StructurePopup" timestamp="1622635094064">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="404" y="110" width="582" height="524" key="StructurePopup/0.0.1366.738@0.0.1366.738" timestamp="1622635094064" />
-    <state x="363" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1622075898071">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="340" y="180" key="com.intellij.ide.util.TipDialog" timestamp="1625530143417">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
+    <state x="340" y="180" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1625530143417" />
     <state x="363" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1622075898071" />
     <state x="62" y="145" width="1182" height="554" key="dock-window-1" timestamp="1620958019054">
       <screen x="0" y="0" width="1366" height="738" />

@@ -24,6 +24,7 @@ public class Bug_KeyBy {
         /*
             TODO 感觉这里有bug ，keyBy函数走2次
                 看起来先走一遍keyBy，然后再走一遍keyBy
+                目前看起来，有界流会走2变keyBy
         * */
         stream
                 .flatMap(new FlatMapFunction<String, Tuple2<String, Long>>() {

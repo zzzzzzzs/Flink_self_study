@@ -52,6 +52,17 @@ under the License.
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>com.alibaba.ververica</groupId>
+            <artifactId>flink-connector-postgres-cdc</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        <!-- postgresql驱动 -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.6</version>
+        </dependency>
         <!-- Apache Flink dependencies -->
         <!-- These dependencies are provided, because they should not be packaged into the JAR file. -->
         <!--    在本地编译运行的时候把scope注释掉，否则运行不了程序，使用maven打包的时候把scope打开，因为这样打包比较小    -->
@@ -60,6 +71,13 @@ under the License.
             <artifactId>flink-java</artifactId>
             <version>${flink.version}</version>
 <!--            <scope>provided</scope>-->
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-jdbc -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-jdbc_2.12</artifactId>
+            <version>1.12.0</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>

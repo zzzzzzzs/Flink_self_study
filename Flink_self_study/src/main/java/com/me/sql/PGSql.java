@@ -41,7 +41,7 @@ class PsqlSource extends RichSourceFunction<Word> {
         String URL = "jdbc:postgresql://47.110.73.221:2345/datacenter";
         Class.forName(driverClass);
         connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-        String sql = " SELECT * FROM  public.aaa ";
+        String sql = "SELECT * FROM  public.aaa";
         preparedStatement = connection.prepareStatement(sql);
     }
 

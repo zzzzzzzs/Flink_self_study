@@ -1,12 +1,9 @@
 package com.me.source;
 
 
-import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
-import java.util.Arrays;
-import java.util.stream.Collector;
 
 public class SourceTest3_socket {
     public static void main(String[] args) throws Exception {

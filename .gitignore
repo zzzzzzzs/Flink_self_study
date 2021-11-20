@@ -23,5 +23,5 @@ hs_err_pid*
 **/target/
 **/*.iml
 
-# 同级的.idea
+
 **/.idea

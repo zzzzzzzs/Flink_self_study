@@ -3,10 +3,11 @@ package com.me.transform;
 import cn.hutool.core.io.file.FileReader;
 import com.me.bean.SmokeLevel;
 import com.me.source.SmokeLevelSource;
-import org.apache.flink.api.common.state.*;
+import org.apache.flink.api.common.state.BroadcastState;
+import org.apache.flink.api.common.state.MapStateDescriptor;
+import org.apache.flink.api.common.state.ReadOnlyBroadcastState;
 import org.apache.flink.api.common.typeinfo.BasicTypeInfo;
 import org.apache.flink.configuration.Configuration;
-import org.apache.flink.connector.kafka.source.enumerator.KafkaSourceEnumerator;
 import org.apache.flink.streaming.api.datastream.BroadcastStream;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
@@ -27,13 +28,11 @@ import java.util.function.Consumer;
  *  这里使用的是文件而不是数据库
  *  有可能主流中的数据先于广播流数据到，因此先将未处理的主流中的数据缓存起来。
  *
- *  TODO 我现在如何获取广播流中数据的长度呢？
- *      如果用Set集合存变量还是相当于创建了变量，而不是用共享变量了，这样内存占用还是大。看StreamBroadCastFromConfigFilePro，只遍历一次，只要长度大于0后面就不遍历了。
  * https://www.codeleading.com/article/2749932764/
  * 也可以看我写的动态分流程序
  */
-public class StreamBroadCastFromConfigFile {
-    private static final Logger LOG = LoggerFactory.getLogger(StreamBroadCastFromConfigFile.class);
+public class StreamBroadCastFromConfigFilePro {
+    private static final Logger LOG = LoggerFactory.getLogger(StreamBroadCastFromConfigFilePro.class);
 
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
@@ -84,7 +83,7 @@ public class StreamBroadCastFromConfigFile {
 
 
             List<SmokeLevel> list = new ArrayList<>(); // 用来缓存未处理的数据
-            Set<String> configSet = new HashSet<>(); // 保存广播下来的数据
+            boolean isExistBroadcastState = false; // 判断是否有广播变量
 
             @Override
             public void open(Configuration parameters) throws Exception {
@@ -96,14 +95,22 @@ public class StreamBroadCastFromConfigFile {
             public void processElement(SmokeLevel value, ReadOnlyContext ctx, Collector<String> out) throws Exception {
                 //获取广播状态
                 ReadOnlyBroadcastState<String, String> tableProcessState = ctx.getBroadcastState(mapStateDescriptor);
-                // TODO 正常应该这样获取广播变量中的数据，但是现在不能获取长度
-//                tableProcessState.contains();
                 LOG.info("获取主流中的数据" + value);
-//                LOG.info("广播变量中的内容" + ;);
-                if (configSet.isEmpty()) {
+
+                if (false == isExistBroadcastState) {
+                    tableProcessState.immutableEntries().forEach(stringStringEntry -> {
+                        if (false == isExistBroadcastState) {
+                            LOG.info("主流接收到广播流中的数据");
+                        }
+                        isExistBroadcastState = true;
+                    });
+                }
+
+
+                if (false == isExistBroadcastState) {
                     list.add(value);
                     LOG.info("此时广播数据为空，要将主流数据: {} 缓存起来", value);
-                }else { // 如果广播数据不为空，则处理数据
+                } else { // 如果广播数据不为空，则处理数据
                     LOG.info("处理主流数据:{}", value);
                     if (!list.isEmpty()) {
                         list.forEach(smokeLevel -> LOG.info("处理缓存数据:{}", smokeLevel));
@@ -116,12 +123,11 @@ public class StreamBroadCastFromConfigFile {
             // 广播流
             @Override
             public void processBroadcastElement(String value, Context ctx, Collector<String> out) throws Exception {
-                LOG.info("接收广播流中的数据:{}",value);
+                LOG.info("接收广播流中的数据:{}", value);
                 //获取广播状态
                 BroadcastState<String, String> tableProcessState = ctx.getBroadcastState(mapStateDescriptor);
                 // 放到广播变量中
                 tableProcessState.put(value, value);
-                configSet.add(value);
                 LOG.info("*************************************");
             }
         });

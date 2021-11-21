@@ -30,6 +30,8 @@ import java.util.function.Consumer;
  *  TODO 我现在如何获取广播流中数据的长度呢？
  *      如果用Set集合存变量还是相当于创建了变量，而不是用共享变量了，这样内存占用还是大。看StreamBroadCastFromConfigFilePro，只遍历一次，只要长度大于0后面就不遍历了。
  * https://www.codeleading.com/article/2749932764/
+ *
+ * https://www.dbmeta.com/question/16
  * 也可以看我写的动态分流程序
  */
 public class StreamBroadCastFromConfigFile {

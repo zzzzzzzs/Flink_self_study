@@ -13,17 +13,21 @@ public class WordCountExample {
     env.setParallelism(1);
 
     env.fromElements("Hello World", "Hello World")
-      .flatMap(new FlatMapFunction<String, WordCountFromBatch.WordWithCount>() {
-        @Override
-        public void flatMap(String value, Collector<WordCountFromBatch.WordWithCount> out) throws Exception {
-          // 使用空格进行切分
-          String[] arr = value.split(" ");
-          // 使用collect方法向下游发送数据
-          for (String e : arr) {
-            out.collect(new WordCountFromBatch.WordWithCount(e, 1L));
-          }
-        }
-      }).keyBy(r -> r.word).print();
+        .flatMap(
+            new FlatMapFunction<String, WordCountFromBatch.WordWithCount>() {
+              @Override
+              public void flatMap(String value, Collector<WordCountFromBatch.WordWithCount> out)
+                  throws Exception {
+                // 使用空格进行切分
+                String[] arr = value.split(" ");
+                // 使用collect方法向下游发送数据
+                for (String e : arr) {
+                  out.collect(new WordCountFromBatch.WordWithCount(e, 1L));
+                }
+              }
+            })
+        .keyBy(r -> r.word)
+        .print();
 
     // 不要忘记执行
     env.execute();

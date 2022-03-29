@@ -69,14 +69,14 @@
   <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>
-      <artifactId>log4j-over-slf4j</artifactId>
-      <version>1.7.30</version>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.flink</groupId>
       <artifactId>flink-java</artifactId>
-      <version>1.12.0</version>
+      <version>1.13.6</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -88,13 +88,25 @@
     <dependency>
       <groupId>org.apache.flink</groupId>
       <artifactId>flink-connector-jdbc_2.12</artifactId>
-      <version>1.12.0</version>
+      <version>1.13.6</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-csv</artifactId>
+      <version>1.13.6</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-json</artifactId>
+      <version>1.13.6</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.flink</groupId>
       <artifactId>flink-streaming-java_2.12</artifactId>
-      <version>1.12.0</version>
+      <version>1.13.6</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -106,7 +118,7 @@
     <dependency>
       <groupId>org.apache.flink</groupId>
       <artifactId>flink-clients_2.12</artifactId>
-      <version>1.12.0</version>
+      <version>1.13.6</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -118,25 +130,30 @@
     <dependency>
       <groupId>org.apache.flink</groupId>
       <artifactId>flink-statebackend-rocksdb_2.12</artifactId>
-      <version>1.12.0</version>
+      <version>1.13.6</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
           <artifactId>frocksdbjni</artifactId>
-          <groupId>com.data-artisans</groupId>
+          <groupId>com.ververica</groupId>
         </exclusion>
       </exclusions>
     </dependency>
+    <dependency>
+      <groupId>org.apache.flink</groupId>
+      <artifactId>flink-cep_2.12</artifactId>
+      <version>1.13.6</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <properties>
-    <flink.version>1.12.0</flink.version>
-    <target.java.version>1.8</target.java.version>
-    <log4j-over-slf4j.version>1.7.30</log4j-over-slf4j.version>
-    <maven.compiler.target>${target.java.version}</maven.compiler.target>
-    <scala.binary.version>2.12</scala.binary.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <logback.version>1.2.3</logback.version>
-    <maven.compiler.source>${target.java.version}</maven.compiler.source>
     <http.version>4.5.3</http.version>
+    <logback.version>1.2.3</logback.version>
+    <target.java.version>1.8</target.java.version>
+    <scala.binary.version>2.12</scala.binary.version>
+    <flink.version>1.13.6</flink.version>
+    <maven.compiler.source>${target.java.version}</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>${target.java.version}</maven.compiler.target>
   </properties>
 </project>

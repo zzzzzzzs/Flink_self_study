@@ -315,6 +315,7 @@ under the License.
                                     <mainClass>com.me.WordCount.WordCountFromBatch</mainClass>
                                 </transformer>
                             </transformers>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
                     </execution>
                 </executions>

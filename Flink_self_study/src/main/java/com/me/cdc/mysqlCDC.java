@@ -5,9 +5,12 @@ import com.ververica.cdc.debezium.JsonDebeziumDeserializationSchema;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
-/**
+/***
  * @author zs
  * @date 2021/11/8
+ *
+ * TODO cdc2.0 以上的表必须有主键
+ *
  */
 public class mysqlCDC {
   public static void main(String[] args) throws Exception {

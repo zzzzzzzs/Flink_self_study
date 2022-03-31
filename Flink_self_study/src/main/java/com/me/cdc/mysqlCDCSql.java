@@ -29,7 +29,7 @@ public class mysqlCDCSql {
             + "        'username' = 'root',\n"
             + "        'password' = '111',\n"
             + "        'database-name' = 'mydb',\n"
-            + "        'table-name' = 'mydb.aaa',\n"
+            + "        'table-name' = 'aaa',\n"
             + "        'scan.incremental.snapshot.enabled' = 'true'\n"
             + "        )");
 

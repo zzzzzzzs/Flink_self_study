@@ -20,7 +20,7 @@ public class mysqlCDC {
                 .password("111")
                 .databaseList("mydb")
                 // 指定某个表的变化
-                .tableList("mydb.information_schema.columns")
+                .tableList("mydb.aaa")
                 .startupOptions(StartupOptions.initial())
                 .deserializer(new StringDebeziumDeserializationSchema())
                 .build();

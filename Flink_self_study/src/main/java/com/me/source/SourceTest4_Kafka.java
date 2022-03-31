@@ -17,7 +17,7 @@ public class SourceTest4_Kafka {
         TODO 先启动本程序，然后启动一个kafka的生产者，观察窗口数据
         * */
         Properties properties = new Properties();
-        properties.setProperty("bootstrap.servers", "aliyun102:9092,aliyun103:9092,aliyun104:9092");
+        properties.setProperty("bootstrap.servers", "node1:9092,node2:9092,node3:9092");
         properties.setProperty("group.id", "consumer-group");
         properties.setProperty("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         properties.setProperty("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
@@ -27,7 +27,7 @@ public class SourceTest4_Kafka {
         DataStream<String> dataStream = env.addSource( (new FlinkKafkaConsumer<>("ods_base_log", new SimpleStringSchema(), properties)) );
 
         // 打印输出
-        dataStream.print();
+        dataStream.print(">>");
 
         env.execute();
     }

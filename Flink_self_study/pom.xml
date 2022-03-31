@@ -101,13 +101,6 @@ under the License.
             <version>30.1.1-jre</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-elasticsearch7 -->
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-elasticsearch7_2.12</artifactId>
-            <version>${flink.version}</version>
-        </dependency>
-
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
@@ -193,7 +186,7 @@ under the License.
 
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-kafka_2.11</artifactId>
+            <artifactId>flink-connector-kafka_${scala.binary.version}</artifactId>
             <version>${flink.version}</version>
         </dependency>
         <dependency>
@@ -218,13 +211,6 @@ under the License.
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.15</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-elasticsearch6 -->
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-elasticsearch7_2.12</artifactId>
-            <version>${flink.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -251,12 +237,6 @@ under the License.
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-table-common</artifactId>
-            <version>${flink.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-runtime-web_2.12</artifactId>
             <version>${flink.version}</version>
         </dependency>
     </dependencies>

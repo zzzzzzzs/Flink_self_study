@@ -10,7 +10,7 @@ import java.util.Properties;
 public class SourceTest4_Kafka {
   public static void main(String[] args) throws Exception {
     StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-    env.setParallelism(1);
+    env.setParallelism(4);
 
     /*
     TODO 先启动本程序，然后启动一个kafka的生产者，观察窗口数据

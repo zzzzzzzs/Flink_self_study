@@ -25,11 +25,12 @@ public class mysqlCDCSql {
             + ")\n"
             + "    WITH ( 'connector' = 'mysql-cdc',\n"
             + "        'hostname' = 'localhost',\n"
-            + "        'port' = '3306',\n"
+            + "        'port' = '3336',\n"
             + "        'username' = 'root',\n"
             + "        'password' = '111',\n"
             + "        'database-name' = 'mydb',\n"
             + "        'table-name' = 'aaa',\n"
+            + "        'scan.startup.mode' = 'initial',\n"
             + "        'scan.incremental.snapshot.enabled' = 'true'\n"
             + "        )");
 

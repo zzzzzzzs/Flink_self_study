@@ -16,7 +16,7 @@ public class SourceTest4_Kafka {
     TODO 先启动本程序，然后启动一个kafka的生产者，观察窗口数据
     * */
     Properties properties = new Properties();
-    properties.setProperty("bootstrap.servers", "192.168.86.102:9092");
+    properties.setProperty("bootstrap.servers", "localhost:9092");
     properties.setProperty("group.id", "consumer-group");
     properties.setProperty(
         "key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");

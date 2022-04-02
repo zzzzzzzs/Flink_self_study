@@ -3,10 +3,9 @@ package com.me.cdc;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 
-/**
- * @author zs
- * @date 2021/11/8
- */
+/***
+ * TODO 有问题，在 initial 模式下，抓不到变化数据
+ * */
 public class mysqlCDCSql {
   public static void main(String[] args) throws Exception {
     // TODO 1.基本环境准备
@@ -30,6 +29,7 @@ public class mysqlCDCSql {
             + "        'password' = '111',\n"
             + "        'database-name' = 'mydb',\n"
             + "        'table-name' = 'aaa',\n"
+            + "        'scan.startup.mode' = 'initial',\n"
             + "        'scan.incremental.snapshot.enabled' = 'true'\n"
             + "        )");
 

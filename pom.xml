@@ -116,7 +116,6 @@ under the License.
         <dependency>
             <groupId>com.ververica</groupId>
             <artifactId>flink-connector-mysql-cdc</artifactId>
-            <!-- The dependency is available only for stable releases, SNAPSHOT dependency need build by yourself. -->
             <version>2.2.0</version>
         </dependency>
 

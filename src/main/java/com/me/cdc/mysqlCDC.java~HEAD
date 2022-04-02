@@ -15,7 +15,7 @@ public class mysqlCDC {
     MySqlSource<String> mySqlSource =
         MySqlSource.<String>builder()
             .hostname("localhost")
-            .port(3306)
+            .port(3336)
             .databaseList("mydb") // set captured database
             .tableList("mydb.aaa") // set captured table
             .username("root")

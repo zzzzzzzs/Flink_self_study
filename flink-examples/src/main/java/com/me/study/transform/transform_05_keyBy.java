@@ -11,14 +11,13 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 public class transform_05_keyBy {
   public static void main(String[] args) throws Exception {
     StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-    env.setParallelism(1);
+    env.setParallelism(2);
 
     DataStreamSource<SensorReading> stream = env.addSource(new SensorSource());
 
     /*
-    TODO 基于不同的 key，流中的事件将被分配到不同的分区中去。所有具有相同 key 的事件将会在接下来的操作符的同
-     一个子任务槽中进行处理。拥有不同 key 的事件可以在同一个任务中处理。但是算子只
-     能访问当前事件的 key 所对应的状态。
+    TODO 基于不同的 key，流中的事件将被分配到不同的分区（并行度）中去。所有具有相同 key 的事件将会在接下来的操作符的同
+     一个子任务槽中进行处理。拥有不同 key 的事件可以在同一个任务中处理。但是算子只能访问当前事件的 key 所对应的状态。
      不能保证不同key的数据在不同的任务槽，但是相同key的事件一定在同一个任务槽，有可能导致了数据倾斜。
      Flink底层必须是分组之后才能做聚合。
      这里只有一个并行度，就一个任务槽，即使是1万个key也都在同一个任务槽。
@@ -28,28 +27,31 @@ public class transform_05_keyBy {
     // KeyedStream<SensorReading, String> keyedStream1 = stream.keyBy("id");
     // KeyedStream<SensorReading, String> keyedStream1 = stream.keyBy(SensorReading::getId);
 
-    KeyedStream<SensorReading, String> keyedStream2 = stream.keyBy(new KeySelector<SensorReading, String>() {
-      @Override
-      public String getKey(SensorReading value) throws Exception {
-        return value.id;
-      }
-    });
+    KeyedStream<SensorReading, String> keyedStream2 =
+        stream.keyBy(
+            new KeySelector<SensorReading, String>() {
+              @Override
+              public String getKey(SensorReading value) throws Exception {
+                return value.id;
+              }
+            });
 
     // 将所有数据都分到一条流上去
-    KeyedStream<SensorReading, Boolean> keyedStream3 = stream.keyBy(new KeySelector<SensorReading, Boolean>() {
-      @Override
-      public Boolean getKey(SensorReading value) throws Exception {
-        return true;
-      }
-    });
+    KeyedStream<SensorReading, Boolean> keyedStream3 =
+        stream.keyBy(
+            new KeySelector<SensorReading, Boolean>() {
+              @Override
+              public Boolean getKey(SensorReading value) throws Exception {
+                return true;
+              }
+            });
 
     // 将流分成奇数和偶数两条流
-    env.fromElements(1, 2, 3).keyBy(new KeySelector<Integer, Boolean>() {
-      @Override
-      public Boolean getKey(Integer value) throws Exception {
-        return value % 2 == 0;
-      }
-    }).print();
+    env
+            .fromElements(1, 2, 3, 4, 5)
+            .keyBy(value -> value % 2 == 0)
+            .sum(0)
+            .print(">>");
 
     env.execute();
   }

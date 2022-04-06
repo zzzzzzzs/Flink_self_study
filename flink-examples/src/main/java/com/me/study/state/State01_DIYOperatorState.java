@@ -10,6 +10,7 @@ import java.util.List;
 
 /*
 TODO 在map操作中自定义 OperatorState 算子状态变量，用的不多
+  应该不对
 * */
 public class State01_DIYOperatorState {
   public static void main(String[] args) throws Exception {

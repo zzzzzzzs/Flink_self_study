@@ -17,6 +17,7 @@ TODO 每传入一条数据，有状态的算子任务都会读取和更新状态
 	状态后端主要负责两件事：
         本地的状态管理
         将检查点（checkpoint）状态写入远程存储
+      此程序需要打包上传到服务器看现象，在指定的路径下有一些文件，随着时间变化
 * */
 
 public class State03_StateBackend_Checkpoint {
@@ -32,7 +33,7 @@ public class State03_StateBackend_Checkpoint {
     // RocksDBStateBackend("hdfs://node1:8020/flink/checkpoints/rocksdb"));
 
     // TODO 检查点配置 Checkpointing，默认是500ms ，配置检查点也是消耗性能的
-    env.enableCheckpointing(300);
+    env.enableCheckpointing(1000);
 
     // 2. 高级选项
     env.getCheckpointConfig().setCheckpointingMode(CheckpointingMode.EXACTLY_ONCE);
